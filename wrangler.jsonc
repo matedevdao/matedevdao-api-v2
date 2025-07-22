@@ -1,0 +1,75 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "api-v2",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-07-15",
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+			"binding": "SIWE_NONCES",
+			"id": "3fddcd7f228a4542b178b0eae067991e",
+			"preview_id": "0efb212c49724b30b6dd7f1f94132219"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "matedevdao",
+			"database_id": "146cd05b-caed-4e15-9ffb-d91cfd37112b"
+		}
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "CHATROOM",
+				"class_name": "ChatRoom"
+			}
+		]
+	},
+	"vars": {
+		"ALLOWED_DOMAIN": "matedevdao.github.io",
+		"ALLOWED_URI": "https://matedevdao.github.io",
+		"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요."
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": [
+				"ChatRoom"
+			]
+		}
+	],
+	"env": {
+		"development": {
+			"kv_namespaces": [
+				{
+					"binding": "SIWE_NONCES",
+					"id": "3fddcd7f228a4542b178b0eae067991e",
+					"preview_id": "0efb212c49724b30b6dd7f1f94132219"
+				}
+			],
+			"d1_databases": [
+				{
+					"binding": "DB",
+					"database_name": "matedevdao",
+					"database_id": "146cd05b-caed-4e15-9ffb-d91cfd37112b"
+				}
+			],
+			"durable_objects": {
+				"bindings": [
+					{
+						"name": "CHATROOM",
+						"class_name": "ChatRoom"
+					}
+				]
+			},
+			"vars": {
+				"ALLOWED_DOMAIN": "localhost:8080",
+				"ALLOWED_URI": "http://localhost:8080",
+				"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요."
+			}
+		}
+	}
+}
