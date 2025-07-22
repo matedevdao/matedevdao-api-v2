@@ -1,3 +1,4 @@
+import { ChatRoom } from "./do/chat-room";
 import { handleGetProfile } from "./handlers/get-profile";
 import { handleLogin } from "./handlers/login";
 import { handleNftOwnershipStats } from "./handlers/nft-ownership-stats";
@@ -6,6 +7,8 @@ import { handleSetProfile } from "./handlers/set-profile";
 import { handleUploadImage } from "./handlers/upload-image";
 import { handleValidateToken } from "./handlers/validate-token";
 import { preflightResponse } from "./services/cors";
+
+export { ChatRoom };
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
