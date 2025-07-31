@@ -4,8 +4,8 @@
 	"private": true,
 	"scripts": {
 		"deploy": "wrangler deploy",
-		"dev": "wrangler dev --port=8080",
-		"start": "wrangler dev --port=8080",
+		"dev": "wrangler dev --env development --port=8082",
+		"start": "wrangler dev --env development --port=8082",
 		"test": "vitest",
 		"cf-typegen": "wrangler types"
 	},
