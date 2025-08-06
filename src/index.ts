@@ -105,6 +105,7 @@ export default {
     }
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
+    console.log(url.pathname, chatMatch);
     if (chatMatch) {
       const [_, roomId, action] = chatMatch;
 
