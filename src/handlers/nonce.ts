@@ -1,7 +1,7 @@
 import { customAlphabet } from 'nanoid';
 import { getAddress } from 'viem';
 import { z } from 'zod';
-import { jsonWithCors } from '../services/cors';
+import { jsonWithCors } from "@gaiaprotocol/worker-common";
 
 // 알파벳: alphanumeric only
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

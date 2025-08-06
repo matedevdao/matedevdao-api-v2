@@ -1,9 +1,8 @@
-import { ChatStorage, WebSocketManager } from '@gaiaprotocol/chat-worker';
+import { ChatStorage, WebSocketManager, ChatMessage } from '@gaiaprotocol/chat-worker';
 import z from 'zod';
 import { nftAddresses } from '../nft/nft-addresses';
-import { verifyToken } from '../services/jwt';
 import { getBalances } from '../services/nft';
-import { ChatMessage } from '../types/chat';
+import { corsHeaders, jsonWithCors, verifyToken } from '@gaiaprotocol/worker-common';
 
 const WHITELIST = [
   '0xbB22b6F3CE72A5Beb3CC400d9b6AF808A18E0D4c',
@@ -36,14 +35,14 @@ export class ChatRoom {
     // ✅ WebSocket 연결 처리
     if (url.pathname.endsWith('/stream') && request.headers.get('upgrade') === 'websocket') {
       const token = url.searchParams.get('token');
-      if (!token) return new Response('Unauthorized: missing token', { status: 401 });
+      if (!token) return jsonWithCors('Unauthorized: missing token', 401);
 
       const payload = await verifyToken(token, this.env);
-      if (!payload?.sub) return new Response('Unauthorized: invalid token', { status: 401 });
+      if (!payload?.sub) return jsonWithCors('Unauthorized: invalid token', 401);
 
       // 🔐 NFT 또는 화이트리스트 검증
       const allowed = await this.#isAllowedToJoin(payload.sub as `0x${string}`);
-      if (!allowed) return new Response('Forbidden: NFT required', { status: 403 });
+      if (!allowed) return jsonWithCors('Forbidden: NFT required', 403);
 
       const [clientSocket, serverSocket] = Object.values(new WebSocketPair()) as [WebSocket, WebSocket];
       this.#websockets.handleConnection(serverSocket, payload.sub, () => this.#storage.loadRecentMessages());
@@ -51,17 +50,18 @@ export class ChatRoom {
       return new Response(null, {
         status: 101,
         webSocket: clientSocket,
+        headers: corsHeaders(),
       });
     }
 
     // ✅ 메시지 전송 처리
     if (request.method === 'POST' && url.pathname.endsWith('/send')) {
       const auth = request.headers.get('authorization');
-      if (!auth?.startsWith('Bearer ')) return new Response('Unauthorized', { status: 401 });
+      if (!auth?.startsWith('Bearer ')) return jsonWithCors('Unauthorized', 401);
 
       const token = auth.slice(7);
       const payload = await verifyToken(token, this.env);
-      if (!payload?.sub) return new Response('Unauthorized', { status: 401 });
+      if (!payload?.sub) return jsonWithCors('Unauthorized', 401);
 
       const schema = z.object({
         text: z.string().optional().default(''),
@@ -90,12 +90,10 @@ export class ChatRoom {
 
       this.#websockets.broadcast(message);
 
-      return new Response(JSON.stringify(message), {
-        headers: { 'Content-Type': 'application/json' }
-      });
+      return jsonWithCors(message);
     }
 
-    return new Response('Not Found', { status: 404 });
+    return jsonWithCors('Not Found', 404);
   }
 
   // ✅ NFT 또는 화이트리스트 검증

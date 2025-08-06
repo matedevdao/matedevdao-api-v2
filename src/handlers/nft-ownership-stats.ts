@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { nftAddresses } from '../nft/nft-addresses';
-import { jsonWithCors } from '../services/cors';
+import { jsonWithCors } from "@gaiaprotocol/worker-common";
 import { getBalances, getHolderCounts } from '../services/nft';
 
 const WHITELIST = [

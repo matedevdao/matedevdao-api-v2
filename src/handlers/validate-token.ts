@@ -1,5 +1,4 @@
-import { jsonWithCors } from '../services/cors';
-import { verifyToken } from '../services/jwt';
+import { jsonWithCors, verifyToken } from "@gaiaprotocol/worker-common";
 
 export async function handleValidateToken(request: Request, env: Env) {
   const auth = request.headers.get('authorization');

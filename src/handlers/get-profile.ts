@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { jsonWithCors } from '../services/cors';
+import { jsonWithCors } from "@gaiaprotocol/worker-common";
 
 const querySchema = z.object({
   address: z.string().regex(/^0x[a-fA-F0-9]{40}$/, '유효하지 않은 이더리움 주소'),

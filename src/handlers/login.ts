@@ -1,8 +1,6 @@
 import { getAddress } from 'viem';
 import { z } from 'zod';
-import { jsonWithCors } from '../services/cors';
-import { generateToken } from '../services/jwt';
-import { validateSiwe } from '../services/siwe';
+import { jsonWithCors, generateToken, validateSiwe } from "@gaiaprotocol/worker-common";
 
 export async function handleLogin(request: Request, env: Env) {
   const schema = z.object({

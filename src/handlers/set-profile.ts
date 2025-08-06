@@ -1,6 +1,5 @@
 import { z } from 'zod';
-import { jsonWithCors } from '../services/cors';
-import { verifyToken } from '../services/jwt';
+import { jsonWithCors, verifyToken } from "@gaiaprotocol/worker-common";
 
 const profileSchema = z.object({
   nickname: z.string().max(30).optional(),

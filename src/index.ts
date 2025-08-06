@@ -1,13 +1,13 @@
 import { ChatRoom } from "./do/chat-room";
 import { handleGetProfile } from "./handlers/get-profile";
+import { handleGetProfiles } from "./handlers/get-profiles";
 import { handleLogin } from "./handlers/login";
 import { handleNftOwnershipStats } from "./handlers/nft-ownership-stats";
 import { handleNonce } from "./handlers/nonce";
 import { handleSetProfile } from "./handlers/set-profile";
 import { handleUploadImage } from "./handlers/upload-image";
 import { handleValidateToken } from "./handlers/validate-token";
-import { preflightResponse } from "./services/cors";
-import { EnhancedFcmMessage, FCM, FcmOptions } from 'fcm-cloudflare-workers';
+import { preflightResponse } from "@gaiaprotocol/worker-common";
 
 export { ChatRoom };
 
@@ -98,6 +98,10 @@ export default {
 
     if (url.pathname === '/profile' && request.method === 'POST') {
       return handleSetProfile(request, env);
+    }
+
+    if (url.pathname === '/profiles') {
+      return handleGetProfiles(request, env);
     }
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);

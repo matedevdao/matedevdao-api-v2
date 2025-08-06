@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { jsonWithCors } from '../services/cors';
+import { jsonWithCors } from "@gaiaprotocol/worker-common";
 
 const IMGBB_API_URL = 'https://api.imgbb.com/1/upload';
 
