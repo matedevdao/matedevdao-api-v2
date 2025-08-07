@@ -1,13 +1,14 @@
+import { preflightResponse } from "@gaiaprotocol/worker-common";
 import { ChatRoom } from "./do/chat-room";
 import { handleGetProfile } from "./handlers/get-profile";
 import { handleGetProfiles } from "./handlers/get-profiles";
 import { handleLogin } from "./handlers/login";
+import { handleMetadataRequest } from "./handlers/metadata";
 import { handleNftOwnershipStats } from "./handlers/nft-ownership-stats";
 import { handleNonce } from "./handlers/nonce";
 import { handleSetProfile } from "./handlers/set-profile";
 import { handleUploadImage } from "./handlers/upload-image";
 import { handleValidateToken } from "./handlers/validate-token";
-import { preflightResponse } from "@gaiaprotocol/worker-common";
 
 export { ChatRoom };
 
@@ -72,6 +73,11 @@ export default {
     }
 
     const url = new URL(request.url);
+
+    if (url.pathname.startsWith('/metadata/')) {
+      return handleMetadataRequest(request, env);
+    }
+
     if (url.pathname === '/nonce' && request.method === 'POST') {
       return handleNonce(request, env);
     }
