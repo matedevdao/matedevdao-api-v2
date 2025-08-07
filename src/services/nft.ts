@@ -183,5 +183,18 @@ async function getBulkNftData(env: Env, nfts: { collection: string; tokenId: num
   return {};
 }
 
-export { getBalances, getBulkNftData, getHolderCounts };
+
+async function fetchHeldNftData(env: Env, address: string) {
+  const sql =
+    `SELECT nft_address, token_id, holder, style, parts, dialogue, image \n` +
+    `FROM nfts \n` +
+    `WHERE holder = ?`;
+
+  const stmt = env.DB.prepare(sql).bind(address);
+  const { results } = await stmt.all<NftRow>();
+
+  return await rowsToData(results);
+}
+
+export { fetchHeldNftData, getBalances, getBulkNftData, getHolderCounts };
 

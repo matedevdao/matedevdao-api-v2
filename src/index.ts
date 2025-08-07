@@ -2,6 +2,7 @@ import { preflightResponse } from "@gaiaprotocol/worker-common";
 import { ChatRoom } from "./do/chat-room";
 import { handleGetProfile } from "./handlers/get-profile";
 import { handleGetProfiles } from "./handlers/get-profiles";
+import { handleHeldNftsRequest } from "./handlers/held-nfts";
 import { handleLogin } from "./handlers/login";
 import { handleMetadataRequest } from "./handlers/metadata";
 import { handleNftDataRequest } from "./handlers/nft";
@@ -81,6 +82,10 @@ export default {
 
     if (url.pathname.startsWith('/nft/')) {
       return handleNftDataRequest(request, env);
+    }
+
+    if (url.pathname.endsWith('/nfts')) {
+      return handleHeldNftsRequest(request, env);
     }
 
     if (url.pathname === '/nonce' && request.method === 'POST') {
