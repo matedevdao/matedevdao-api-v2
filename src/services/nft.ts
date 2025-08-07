@@ -64,12 +64,12 @@ type NftData = {
   collection: string;
   id: number;
   name: string;
-  description: string;
+  description?: string;
   image: string;
-  external_url: string;
+  external_url?: string;
   animation_url?: string;
   traits?: { [traitName: string]: string | number };
-  parts: { [partName: string]: string | number };
+  parts?: { [partName: string]: string | number };
   holder: string;
 };
 
@@ -90,7 +90,7 @@ async function rowsToData(rows: NftRow[]) {
     if (!collection) throw new Error(`Unknown collection address: ${row.nft_address}`);
 
     if (STATIC_METADATA_COLLECTIONS.includes(collection)) {
-      promises.push((async () => {
+      /*promises.push((async () => {
         const metadata = await fetchStaticMetadata(collection, row.token_id);
         if (!metadata) throw new Error(`Static metadata not found for ${collection} #${row.token_id}`);
         data[`${collection}:${row.token_id}`] = {
@@ -99,7 +99,15 @@ async function rowsToData(rows: NftRow[]) {
           id: row.token_id,
           holder: row.holder,
         };
-      })());
+      })());*/
+
+      data[`${collection}:${row.token_id}`] = {
+        collection,
+        id: row.token_id,
+        name: `#${row.token_id}`,
+        image: `https://matedevdao.github.io/static-kaia-nft-assets/${collection}/images/${row.token_id}.png`,
+        holder: row.holder,
+      };
     }
 
     else {
