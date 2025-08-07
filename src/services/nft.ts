@@ -74,7 +74,7 @@ type NftData = {
 };
 
 async function fetchStaticMetadata(collection: string, tokenId: number) {
-  const res = await fetch(`https://raw.githubusercontent.com/matedevdao/static-kaia-nft-assets/refs/heads/main/${collection}/metadata/${tokenId}.json`);
+  const res = await fetch(`https://matedevdao.github.io/static-kaia-nft-assets/${collection}/metadata/${tokenId}.json`);
   return await res.json<any>();
 }
 
