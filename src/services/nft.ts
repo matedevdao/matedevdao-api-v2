@@ -1,20 +1,26 @@
 import { kaiaClient } from '../kaia';
 import ParsingNFTDataArtifact from '../nft/ParsingNFTData.json' assert { type: 'json' };
-import { metadataTransformer } from '../utils/metadata-transformer';
 
 const PARSING_NFT_DATA_CONTRACT_ADDRESS =
   '0x8A98A038dcA75091225EE0a1A11fC20Aa23832A0';
 
 const NFT_ADDRESSES: Record<string, `0x${string}`> = {
-  //'dogesoundclub-mates': '0xE47E90C58F8336A2f24Bcd9bCB530e2e02E1E8ae',
-  //'dogesoundclub-e-mates': '0x2B303fd0082E4B51e5A6C602F45545204bbbB4DC',
-  //'dogesoundclub-biased-mates': '0xDeDd727ab86bce5D416F9163B2448860BbDE86d4',
+  'dogesoundclub-mates': '0xE47E90C58F8336A2f24Bcd9bCB530e2e02E1E8ae',
+  'dogesoundclub-e-mates': '0x2B303fd0082E4B51e5A6C602F45545204bbbB4DC',
+  'dogesoundclub-biased-mates': '0xDeDd727ab86bce5D416F9163B2448860BbDE86d4',
   'sigor-sparrows': '0x7340a44AbD05280591377345d21792Cdc916A388',
   'sigor-housedeeds': '0x455Ee7dD1fc5722A7882aD6B7B8c075655B8005B',
   'kingcrowndao-kongz': '0xF967431fb8F5B4767567854dE5448D2EdC21a482',
-  //'kingcrowndao-pixel-kongz': '0x81b5C41Bac33ea696D9684D9aFdB6cd9f6Ee5CFF',
+  'kingcrowndao-pixel-kongz': '0x81b5C41Bac33ea696D9684D9aFdB6cd9f6Ee5CFF',
   'babyping': '0x595b299Db9d83279d20aC37A85D36489987d7660',
 };
+
+const STATIC_METADATA_COLLECTIONS = [
+  'dogesoundclub-mates',
+  'dogesoundclub-e-mates',
+  'dogesoundclub-biased-mates',
+  'kingcrowndao-pixel-kongz',
+];
 
 async function getBalances(address: `0x${string}`, contracts: `0x${string}`[]): Promise<bigint[]> {
   return await kaiaClient.readContract({
@@ -67,8 +73,15 @@ type NftData = {
   holder: string;
 };
 
-function rowsToData(rows: NftRow[]) {
+async function fetchStaticMetadata(collection: string, tokenId: number) {
+  const res = await fetch(`https://raw.githubusercontent.com/matedevdao/static-kaia-nft-assets/refs/heads/main/${collection}/metadata/${tokenId}.json`);
+  return await res.json<any>();
+}
+
+async function rowsToData(rows: NftRow[]) {
   const data: { [key: string]: NftData } = {};
+
+  const promises: Promise<void>[] = [];
 
   for (const row of rows) {
     const collection = Object.keys(NFT_ADDRESSES).find((key) =>
@@ -76,51 +89,68 @@ function rowsToData(rows: NftRow[]) {
     );
     if (!collection) throw new Error(`Unknown collection address: ${row.nft_address}`);
 
-    let name;
-    let image;
-    let description;
-    let external_url;
-    let traits: { [traitName: string]: string } | undefined;
-
-    let parts: { [partName: string]: string } = {};
-    if (row.parts) parts = JSON.parse(row.parts);
-
-    if (collection === 'sigor-sparrows') {
-      name = 'Sigor Sparrow #' + row.token_id;
-      image =
-        `https://pub-b5f5f68564ba4ce693328fe84e1a6c57.r2.dev/sigor-sparrows/${row.image}`;
-      traits = {};
-      if (row.style) traits['Style'] = row.style;
-      if (row.dialogue) traits['Dialogue'] = row.dialogue;
-      external_url = 'https://sigor.com/';
-    } else if (collection === 'sigor-housedeeds') {
-      name = 'Sigor House Deed #' + row.token_id;
-      image =
-        'https://matedevdao.github.io/static-kaia-nft-assets/sigor-housedeed-legacy.avif';
-      external_url = 'https://sigor.com/';
-    } else if (collection === 'kingcrowndao-kongz') {
-      name = 'KCD Kong #' + row.token_id;
-      image =
-        `https://pub-b5f5f68564ba4ce693328fe84e1a6c57.r2.dev/kingcrowndao-kongz/${row.image}`;
-      external_url = 'https://kingcrowndao.github.io/';
-    } else if (collection === 'babyping') {
-      name = 'BabyPing #' + row.token_id;
-      image =
-        `https://pub-b5f5f68564ba4ce693328fe84e1a6c57.r2.dev/babyping/${row.image}`;
+    if (STATIC_METADATA_COLLECTIONS.includes(collection)) {
+      promises.push((async () => {
+        const metadata = await fetchStaticMetadata(collection, row.token_id);
+        if (!metadata) throw new Error(`Static metadata not found for ${collection} #${row.token_id}`);
+        data[`${collection}:${row.token_id}`] = {
+          ...metadata,
+          collection,
+          id: row.token_id,
+          holder: row.holder,
+        };
+      })());
     }
 
-    data[`${collection}:${row.token_id}`] = {
-      collection,
-      id: row.token_id,
-      name: name ? name : `#${row.token_id}`,
-      description: description ? description : `#${row.token_id}`,
-      image: image ? image : '',
-      external_url: external_url ? external_url : '',
-      traits,
-      parts,
-      holder: row.holder,
-    };
+    else {
+      let name;
+      let image;
+      let description;
+      let external_url;
+      let traits: { [traitName: string]: string } | undefined;
+
+      let parts: { [partName: string]: string } = {};
+      if (row.parts) parts = JSON.parse(row.parts);
+
+      if (collection === 'sigor-sparrows') {
+        name = 'Sigor Sparrow #' + row.token_id;
+        image =
+          `https://pub-b5f5f68564ba4ce693328fe84e1a6c57.r2.dev/sigor-sparrows/${row.image}`;
+        traits = {};
+        if (row.style) traits['Style'] = row.style;
+        if (row.dialogue) traits['Dialogue'] = row.dialogue;
+        external_url = 'https://sigor.com/';
+      } else if (collection === 'sigor-housedeeds') {
+        name = 'Sigor House Deed #' + row.token_id;
+        image =
+          'https://matedevdao.github.io/static-kaia-nft-assets/sigor-housedeed-legacy.avif';
+        external_url = 'https://sigor.com/';
+      } else if (collection === 'kingcrowndao-kongz') {
+        name = 'KCD Kong #' + row.token_id;
+        image =
+          `https://pub-b5f5f68564ba4ce693328fe84e1a6c57.r2.dev/kingcrowndao-kongz/${row.image}`;
+        external_url = 'https://kingcrowndao.github.io/';
+      } else if (collection === 'babyping') {
+        name = 'BabyPing #' + row.token_id;
+        image =
+          `https://pub-b5f5f68564ba4ce693328fe84e1a6c57.r2.dev/babyping/${row.image}`;
+      }
+
+      data[`${collection}:${row.token_id}`] = {
+        collection,
+        id: row.token_id,
+        name: name ? name : `#${row.token_id}`,
+        description: description ? description : `#${row.token_id}`,
+        image: image ? image : '',
+        external_url: external_url ? external_url : '',
+        traits,
+        parts,
+        holder: row.holder,
+      };
+    }
   }
+
+  await Promise.all(promises);
 
   return data;
 }
@@ -148,7 +178,7 @@ async function getBulkNftData(env: Env, nfts: { collection: string; tokenId: num
     const stmt = env.DB.prepare(sql).bind(...bindValues);
     const { results } = await stmt.all<NftRow>();
 
-    return rowsToData(results);
+    return await rowsToData(results);
   }
   return {};
 }
