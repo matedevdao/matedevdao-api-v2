@@ -1,8 +1,7 @@
 import { jsonWithCors } from '@gaiaprotocol/worker-common';
-import { metadataTransformer } from '../utils/metadata-transformer';
 import { getBulkNftData } from '../services/nft';
 
-export async function handleMetadataRequest(
+export async function handleNftDataRequest(
   request: Request,
   env: Env
 ): Promise<Response> {
@@ -25,15 +24,13 @@ export async function handleMetadataRequest(
     const data = await getBulkNftData(env, [{ collection, tokenId }]);
 
     const key = `${collection}:${tokenId}`;
-    const nftData = data[key];
+    const nft = data[key];
 
-    if (!nftData) {
-      return jsonWithCors({ error: 'Metadata not found' }, 404);
+    if (!nft) {
+      return jsonWithCors({ error: 'NFT data not found' }, 404);
     }
 
-    const metadata = metadataTransformer.toOpenSeaFormat(nftData);
-
-    return jsonWithCors(metadata);
+    return jsonWithCors(nft);
   } catch (err) {
     console.error(err);
     return jsonWithCors(
