@@ -84,43 +84,17 @@ export default {
       console.error('Error sending message:', error);
     }*/
 
-    if (request.method === 'OPTIONS') {
-      return preflightResponse();
-    }
+    if (request.method === 'OPTIONS') return preflightResponse();
 
     const url = new URL(request.url);
-
-    if (url.pathname === '/nonce' && request.method === 'POST') {
-      return handleNonce(request, env);
-    }
-
-    if (url.pathname === '/login' && request.method === 'POST') {
-      return handleLogin(request, env);
-    }
-
-    if (url.pathname === '/validate-token' && request.method === 'GET') {
-      return handleValidateToken(request, env);
-    }
-
-    if (url.pathname === '/upload-image' && request.method === 'POST') {
-      return handleUploadImage(request, env);
-    }
-
-    if (url.pathname === '/nft-ownership-stats' && request.method === 'GET') {
-      return handleNftOwnershipStats(request, env);
-    }
-
-    if (url.pathname === '/profile' && request.method === 'GET') {
-      return handleGetProfile(request, env);
-    }
-
-    if (url.pathname === '/profile' && request.method === 'POST') {
-      return handleSetProfile(request, env);
-    }
-
-    if (url.pathname === '/profiles') {
-      return handleGetProfiles(request, env);
-    }
+    if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
+    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, env);
+    if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
+    if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
+    if (url.pathname === '/nft-ownership-stats' && request.method === 'GET') return handleNftOwnershipStats(request, env);
+    if (url.pathname === '/profile' && request.method === 'GET') return handleGetProfile(request, env);
+    if (url.pathname === '/profile' && request.method === 'POST') return handleSetProfile(request, env);
+    if (url.pathname === '/profiles') return handleGetProfiles(request, env);
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
     if (chatMatch) {
