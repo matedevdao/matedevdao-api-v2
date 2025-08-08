@@ -1,4 +1,6 @@
-import { preflightResponse } from "@gaiaprotocol/worker-common";
+import { preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
+import { createPublicClient, http } from "viem";
+import { kaia } from "viem/chains";
 import { ChatRoom } from "./do/chat-room";
 import { handleGetProfile } from "./handlers/get-profile";
 import { handleGetProfiles } from "./handlers/get-profiles";
@@ -10,6 +12,21 @@ import { handleUploadImage } from "./handlers/upload-image";
 import { handleValidateToken } from "./handlers/validate-token";
 
 export { ChatRoom };
+
+const KAIA_CLIENT = createPublicClient({ chain: kaia, transport: http() });
+
+const TOKEN_IDS_RANGES: { [address: string]: { start: number; end: number } } = {
+  '0xE47E90C58F8336A2f24Bcd9bCB530e2e02E1E8ae': { start: 0, end: 9999 }, // DogeSoundClub Mates
+  '0x2B303fd0082E4B51e5A6C602F45545204bbbB4DC': { start: 0, end: 7999 }, // DogeSoundClub E-Mates
+  '0xDeDd727ab86bce5D416F9163B2448860BbDE86d4': { start: 0, end: 19999 }, // DogeSoundClub Biased Mates
+  '0x7340a44AbD05280591377345d21792Cdc916A388': { start: 0, end: 8000 }, // Sigor Sparrows
+  '0x455Ee7dD1fc5722A7882aD6B7B8c075655B8005B': { start: 0, end: 8000 }, // Sigor House Deeds
+  '0xF967431fb8F5B4767567854dE5448D2EdC21a482': { start: 0, end: 2999 }, // KCD Kongz
+  '0x81b5C41Bac33ea696D9684D9aFdB6cd9f6Ee5CFF': { start: 1, end: 10000 }, // KCD Pixel Kongz
+  '0x595b299Db9d83279d20aC37A85D36489987d7660': { start: 0, end: 2999 }, // BabyPing
+};
+
+const BLOCK_STEP = 2500;
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
@@ -117,5 +134,8 @@ export default {
     }
 
     return new Response('Not Found', { status: 404 });
+  },
+  async scheduled(controller, env, ctx) {
+    await syncNftOwnershipFromEvents(env, KAIA_CLIENT, TOKEN_IDS_RANGES, BLOCK_STEP);
   },
 } satisfies ExportedHandler<Env>;

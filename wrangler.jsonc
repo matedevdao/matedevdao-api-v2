@@ -6,6 +6,11 @@
 	"observability": {
 		"enabled": true
 	},
+	"triggers": {
+		"crons": [
+			"*/1 * * * *"
+		]
+	},
 	"kv_namespaces": [
 		{
 			"binding": "SIWE_NONCES",
