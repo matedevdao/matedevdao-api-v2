@@ -2,11 +2,14 @@ import { preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/wor
 import { createPublicClient, http } from "viem";
 import { kaia } from "viem/chains";
 import { ChatRoom } from "./do/chat-room";
+import { handleGetMainNftsWithInfo } from "./handlers/get-main-nfts-with-info";
+import { handleGetMyMainNft } from "./handlers/get-my-main-nft";
 import { handleGetProfile } from "./handlers/get-profile";
 import { handleGetProfiles } from "./handlers/get-profiles";
 import { handleLogin } from "./handlers/login";
 import { handleNftOwnershipStats } from "./handlers/nft-ownership-stats";
 import { handleNonce } from "./handlers/nonce";
+import { handleSetMainNft } from "./handlers/set-main-nft";
 import { handleSetProfile } from "./handlers/set-profile";
 import { handleUploadImage } from "./handlers/upload-image";
 import { handleValidateToken } from "./handlers/validate-token";
@@ -91,10 +94,13 @@ export default {
     if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, env);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
     if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
-    if (url.pathname === '/nft-ownership-stats' && request.method === 'GET') return handleNftOwnershipStats(request, env);
-    if (url.pathname === '/profile' && request.method === 'GET') return handleGetProfile(request, env);
-    if (url.pathname === '/profile' && request.method === 'POST') return handleSetProfile(request, env);
+    if (url.pathname === '/nft-ownership-stats') return handleNftOwnershipStats(request, env);
+    if (url.pathname === '/profile') return handleGetProfile(request, env);
+    if (url.pathname === '/profile') return handleSetProfile(request, env);
     if (url.pathname === '/profiles') return handleGetProfiles(request, env);
+    if (url.pathname === '/set-main-nft') return handleSetMainNft(request, env);
+    if (url.pathname === '/get-my-main-nft') return handleGetMyMainNft(request, env);
+    if (url.pathname === '/get-main-nfts-with-info') return handleGetMainNftsWithInfo(request, env);
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
     if (chatMatch) {
