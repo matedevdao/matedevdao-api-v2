@@ -87,7 +87,7 @@ export default {
 
     const url = new URL(request.url);
     if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
-    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8127, env);
+    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
     if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
     if (url.pathname === '/nft-ownership-stats') return handleNftOwnershipStats(request, env);
