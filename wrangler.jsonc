@@ -84,7 +84,7 @@
 			"services": [
 				{
 					"binding": "NFT_API_WORKER",
-					"service": "nft-api"
+					"service": "nft-api-development"
 				}
 			]
 		}
