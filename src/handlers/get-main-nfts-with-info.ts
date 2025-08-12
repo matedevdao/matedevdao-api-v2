@@ -67,7 +67,7 @@ export async function handleGetMainNftsWithInfo(request: Request, env: Env): Pro
         }
       } else {
         const text = await res.text().catch(() => '');
-        console.error(`nfts/by-ids failed: ${res.status} ${res.statusText}`, text);
+        console.error(`${env.NFT_API_BASE_URI}/nfts/by-ids failed: ${res.status} ${res.statusText}`, text);
       }
     }
 
