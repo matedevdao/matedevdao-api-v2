@@ -49,26 +49,7 @@ export async function handleGetMainNftsWithInfo(request: Request, env: Env): Pro
 
     let byKey: Record<string, NftItem> = {};
     if (tokenIds.length > 0) {
-      const res = await fetch(`${env.NFT_API_BASE_URI}/nfts/by-ids`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ids: tokenIds }),
-      });
-
-      if (res.ok) {
-        const payload: any = await res.json().catch(() => ({} as any));
-        if (payload?.results && typeof payload.results === 'object') {
-          byKey = payload.results as Record<string, NftItem>;
-        } else if (Array.isArray(payload)) {
-          // 배열 방어: key를 `${collection}:${id}` 형태로 합성해서 매핑
-          byKey = Object.fromEntries(
-            payload.map((x: any) => [`${collection}:${Number(x?.token_id)}`, x]).filter(([, v]) => v)
-          );
-        }
-      } else {
-        const text = await res.text().catch(() => '');
-        console.error(`${env.NFT_API_BASE_URI}/nfts/by-ids failed: ${res.status} ${res.statusText}`, text);
-      }
+      byKey = await (env.NFT_API_WORKER as any).fetchNftDataByIds(tokenIds);
     }
 
     // 병합

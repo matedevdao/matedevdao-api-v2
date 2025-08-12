@@ -34,7 +34,6 @@
 		]
 	},
 	"vars": {
-		"NFT_API_BASE_URI": "https://nft-api.matedevdao.workers.dev",
 		"ALLOWED_DOMAIN": "matedevdao.github.io",
 		"ALLOWED_URI": "https://matedevdao.github.io",
 		"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요."
@@ -47,6 +46,12 @@
 			]
 		}
 	],
+	"services": [
+    {
+      "binding": "NFT_API_WORKER",
+      "service": "nft-api"
+    }
+  ],
 	"env": {
 		"development": {
 			"kv_namespaces": [
@@ -72,11 +77,16 @@
 				]
 			},
 			"vars": {
-				"NFT_API_BASE_URI": "http://localhost:8082",
 				"ALLOWED_DOMAIN": "localhost:8080",
 				"ALLOWED_URI": "http://localhost:8080",
 				"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요."
-			}
+			},
+			"services": [
+				{
+					"binding": "NFT_API_WORKER",
+					"service": "nft-api"
+				}
+			]
 		}
 	}
 }
