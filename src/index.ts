@@ -1,4 +1,4 @@
-import { preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
+import { handleLogin, handleNonce, handleUploadImage, handleValidateToken, preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
 import { createPublicClient, http } from "viem";
 import { kaia } from "viem/chains";
 import { ChatRoom } from "./do/chat-room";
@@ -6,13 +6,9 @@ import { handleGetMainNftsWithInfo } from "./handlers/get-main-nfts-with-info";
 import { handleGetMyMainNft } from "./handlers/get-my-main-nft";
 import { handleGetProfile } from "./handlers/get-profile";
 import { handleGetProfiles } from "./handlers/get-profiles";
-import { handleLogin } from "./handlers/login";
 import { handleNftOwnershipStats } from "./handlers/nft-ownership-stats";
-import { handleNonce } from "./handlers/nonce";
 import { handleSetMainNft } from "./handlers/set-main-nft";
 import { handleSetProfile } from "./handlers/set-profile";
-import { handleUploadImage } from "./handlers/upload-image";
-import { handleValidateToken } from "./handlers/validate-token";
 
 export { ChatRoom };
 
@@ -91,7 +87,7 @@ export default {
 
     const url = new URL(request.url);
     if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
-    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, env);
+    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8127, env);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
     if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
     if (url.pathname === '/nft-ownership-stats') return handleNftOwnershipStats(request, env);
