@@ -1,0 +1,2171 @@
+[
+  {
+    "name": "Background",
+    "parts": [
+      {
+        "name": "IJM beige",
+        "images": [
+          {
+            "path": "1.BG/IJM beige.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Light green",
+        "images": [
+          {
+            "path": "1.BG/Light green.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Light steel blue",
+        "images": [
+          {
+            "path": "1.BG/Light steel blue.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Pastel green",
+        "images": [
+          {
+            "path": "1.BG/Pastel green.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Rainbow",
+        "images": [
+          {
+            "path": "1.BG/Rainbow.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Sky blue",
+        "images": [
+          {
+            "path": "1.BG/Sky blue.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "White",
+        "images": [
+          {
+            "path": "1.BG/White.png",
+            "drawingOrder": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tail",
+    "parts": [
+      {
+        "name": "Cock",
+        "images": [
+          {
+            "path": "2.TAIL/Cock.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Duck",
+        "images": [
+          {
+            "path": "2.TAIL/Duck.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Eagle",
+        "images": [
+          {
+            "path": "2.TAIL/Eagle.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Ostrich",
+        "images": [
+          {
+            "path": "2.TAIL/Ostrich.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Phoenix",
+        "images": [
+          {
+            "path": "2.TAIL/Phoenix.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Pigeon",
+        "images": [
+          {
+            "path": "2.TAIL/Pigeon.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Sparrow",
+        "images": [
+          {
+            "path": "2.TAIL/Sparrow.png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Turkey",
+        "images": [
+          {
+            "path": "2.TAIL/Turkey.png",
+            "drawingOrder": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Body",
+    "parts": [
+      {
+        "name": "Brown",
+        "images": [
+          {
+            "path": "3.BODY/Brown.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Brown without cheek",
+        "images": [
+          {
+            "path": "3.BODY/Brown-without cheek.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Dark brown",
+        "images": [
+          {
+            "path": "3.BODY/Dark brown.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Dark brown without cheek",
+        "images": [
+          {
+            "path": "3.BODY/Dark brown-without cheek.png",
+            "drawingOrder": 300
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Back",
+    "parts": [
+      {
+        "name": "A bag of rice",
+        "images": [
+          {
+            "path": "4.BACK/A bag of rice.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Apples",
+        "images": [
+          {
+            "path": "4.BACK/apples.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Cracked egg",
+        "images": [
+          {
+            "path": "4.BACK/Cracked egg.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Ddong Young Jae",
+        "images": [
+          {
+            "path": "4.BACK/Ddong Young Jae.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "JOKER",
+        "images": [
+          {
+            "path": "4.BACK/JOKER.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Dinosaur Egg",
+        "images": [
+          {
+            "path": "4.BACK/Dinosaur Egg.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Empty Basket",
+        "images": [
+          {
+            "path": "4.BACK/Empty Basket.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Green apples",
+        "images": [
+          {
+            "path": "4.BACK/Green apples.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "None",
+        "images": [
+          {
+            "path": "4.BACK/None.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Powdered soybean",
+        "images": [
+          {
+            "path": "4.BACK/Powdered soybean.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Rock Young Jae",
+        "images": [
+          {
+            "path": "4.BACK/Rock Young Jae.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Rock",
+        "images": [
+          {
+            "path": "4.BACK/Rock.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Sweet potato",
+        "images": [
+          {
+            "path": "4.BACK/Sweet potato.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Tangerine",
+        "images": [
+          {
+            "path": "4.BACK/Tangerine.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Tomatos",
+        "images": [
+          {
+            "path": "4.BACK/Tomatos.png",
+            "drawingOrder": 400
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eye",
+    "parts": [
+      {
+        "name": "Brave eyes",
+        "images": [
+          {
+            "path": "5.EYES/Brave eyes.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Cock",
+        "images": [
+          {
+            "path": "5.EYES/Cock.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Doge",
+        "images": [
+          {
+            "path": "5.EYES/Doge.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Duck",
+        "images": [
+          {
+            "path": "5.EYES/Duck.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Eagle",
+        "images": [
+          {
+            "path": "5.EYES/Eagle.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Heart",
+        "images": [
+          {
+            "path": "5.EYES/Heart.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "IJM",
+        "images": [
+          {
+            "path": "5.EYES/IJM.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Indifferent eyes",
+        "images": [
+          {
+            "path": "5.EYES/Indifferent eyes.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Kind eye",
+        "images": [
+          {
+            "path": "5.EYES/Kind eye.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Mad eyes",
+        "images": [
+          {
+            "path": "5.EYES/Mad eyes.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Naive eyes",
+        "images": [
+          {
+            "path": "5.EYES/Naive eyes.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Ostrich",
+        "images": [
+          {
+            "path": "5.EYES/Ostrich.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Owl",
+        "images": [
+          {
+            "path": "5.EYES/Owl.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Parrot",
+        "images": [
+          {
+            "path": "5.EYES/Parrot.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Penguin",
+        "images": [
+          {
+            "path": "5.EYES/Penguin.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Pigeon",
+        "images": [
+          {
+            "path": "5.EYES/Pigeon.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Registered eyes",
+        "images": [
+          {
+            "path": "5.EYES/Registered eyes.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Seagull",
+        "images": [
+          {
+            "path": "5.EYES/Seagull.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Sparrow",
+        "images": [
+          {
+            "path": "5.EYES/Sparrow.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Tearful eyes",
+        "images": [
+          {
+            "path": "5.EYES/Tearful eyes.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Turkey",
+        "images": [
+          {
+            "path": "5.EYES/Turkey.png",
+            "drawingOrder": 500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beak",
+    "parts": [
+      {
+        "name": "Bald Eagle",
+        "images": [
+          {
+            "path": "6.BEAK/Bald Eagle.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cock",
+        "images": [
+          {
+            "path": "6.BEAK/Cock.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Duck",
+        "images": [
+          {
+            "path": "6.BEAK/Duck.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Eagle",
+        "images": [
+          {
+            "path": "6.BEAK/Eagle.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Ostrich",
+        "images": [
+          {
+            "path": "6.BEAK/Ostrich.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Owl",
+        "images": [
+          {
+            "path": "6.BEAK/Owl.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Parrot",
+        "images": [
+          {
+            "path": "6.BEAK/Parrot.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Penguin",
+        "images": [
+          {
+            "path": "6.BEAK/Penguin.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Pigeon",
+        "images": [
+          {
+            "path": "6.BEAK/Pigeon.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Seagull",
+        "images": [
+          {
+            "path": "6.BEAK/Seagull.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Sparrow",
+        "images": [
+          {
+            "path": "6.BEAK/Sparrow.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Turkey",
+        "images": [
+          {
+            "path": "6.BEAK/Turkey.png",
+            "drawingOrder": 600
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shoes",
+    "parts": [
+      {
+        "name": "2didas",
+        "images": [
+          {
+            "path": "7.SHOES/2didas.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Duck",
+        "images": [
+          {
+            "path": "7.SHOES/Duck.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Eagle",
+        "images": [
+          {
+            "path": "7.SHOES/Eagle.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "None",
+        "images": [
+          {
+            "path": "7.SHOES/None.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Rabbit",
+        "images": [
+          {
+            "path": "7.SHOES/Rabbit.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Rubber shoe B",
+        "images": [
+          {
+            "path": "7.SHOES/Rubber shoe B.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Rubber shoe W",
+        "images": [
+          {
+            "path": "7.SHOES/Rubber shoe W.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Sneakers",
+        "images": [
+          {
+            "path": "7.SHOES/Sneakers.png",
+            "drawingOrder": 700
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Text Balloon",
+    "parts": [
+      {
+        "name": "Innermost feelings",
+        "images": [
+          {
+            "path": "8.TEXT BALLOON/Innermost feelings.png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Shout out",
+        "images": [
+          {
+            "path": "8.TEXT BALLOON/Shout out.png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Talk",
+        "images": [
+          {
+            "path": "8.TEXT BALLOON/Talk.png",
+            "drawingOrder": 800
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wings",
+    "parts": [
+      {
+        "name": "Fighting",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.BROWN WINGS/Fighting.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Greet",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.BROWN WINGS/Greet.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Hold item",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.BROWN WINGS/Hold item.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Hug item",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.BROWN WINGS/Hug item.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "None",
+        "images": [
+          {
+            "path": "9.BROWN WINGS/None.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Scold",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.BROWN WINGS/Scold.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Fighting",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.DARK BROWN WINGS/Fighting.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Greet",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.DARK BROWN WINGS/Greet.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Hold item",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.DARK BROWN WINGS/Hold item.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Hug item",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.DARK BROWN WINGS/Hug item.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Scold",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "9.DARK BROWN WINGS/Scold.png",
+            "drawingOrder": 900
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hold Item",
+    "condition": {
+      "part": "Wings",
+      "values": [
+        "Hold item"
+      ]
+    },
+    "parts": [
+      {
+        "name": "A glass of water",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/A glass of water.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Brush",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Brush.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Carrot",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Carrot.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Corn",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Corn.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Lily of the valley",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Lily of the valley.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Magic wand",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Magic wand.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Microphone",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Microphone.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Poop stick",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Poop stick.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Potato",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Potato.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Rice",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Rice.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Spoon",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Spoon.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Spring onion",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Spring onion.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Sweet potato",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Sweet potato.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Towel",
+        "images": [
+          {
+            "path": "10.HOLD ITEM/Towel.png",
+            "drawingOrder": 1000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hug Item",
+    "condition": {
+      "part": "Wings",
+      "values": [
+        "Hug item"
+      ]
+    },
+    "parts": [
+      {
+        "name": "Beach ball",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Beach ball.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Bouquet",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Bouquet.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Camera",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Camera.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Ethereum",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Ethereum.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Gift box",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Gift box.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Injeolmi",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Injeolmi.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Kkultteok",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Kkultteok.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Klaytn",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Klaytn.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Mujigaetteok",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Mujigaetteok.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Pencil and notebook",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Pencil and notebook.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Polygon ETH",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Polygon ETH.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Pot-Injeolmi",
+        "images": [
+          {
+            "path": "11.HUG ITEM/Pot-Injeolmi.png",
+            "drawingOrder": 1100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hair Accessory",
+    "parts": [
+      {
+        "name": "A roasted chestnut hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/A roasted chestnut hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Ant hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Ant hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Blue ribbon",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Blue ribbon.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Bump",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Bump.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Camellia",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Camellia.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Chef's hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Chef's hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Chestnut haircut",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Chestnut haircut.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Cockscomb",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Cockscomb.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Cone-gratulation",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Cone-gratulation.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Detective hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Detective hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Disheveled hair",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Disheveled hair.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Drunken tie",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Drunken tie.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Frog hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Frog hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Gentleman hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Gentleman hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Graduation cap",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Graduation cap.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Green ribbon",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Green ribbon.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Hair point",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Hair point.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Horn",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Horn.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Jokduri",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Jokduri.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Katydid hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Katydid hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Kindergarten hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Kindergarten hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Korea perm",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Korea perm.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "None",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/None.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Police hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Police hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Powdered soybean",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Powdered soybean.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Rabbit hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Rabbit hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Red hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Red hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Red ribbon",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Red ribbon.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Rice bowl",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Rice bowl.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Satgat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Satgat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Straw hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Brown",
+            "Brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.BROWN HAIR ACCESSORY/Straw hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "A roasted chestnut hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/A roasted chestnut hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Ant hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Ant hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Blue ribbon",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Blue ribbon.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Bump",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Bump.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Camellia",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Camellia.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Chef's hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Chef's hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Chestnut haircut",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Chestnut haircut.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Cockscomb",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Cockscomb.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Cone-gratulation",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Cone-gratulation.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Detective hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Detective hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Disheveled hair",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Disheveled hair.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Drunken tie",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Drunken tie.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Frog hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Frog hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Gentleman hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Gentleman hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Graduation cap",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Graduation cap.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Green ribbon",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Green ribbon.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Hair point",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Hair point.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Horn",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Horn.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Jokduri",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Jokduri.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Katydid hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Katydid hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Kindergarten hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Kindergarten hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Korea perm",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Korea perm.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "None",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/None.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Police hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Police hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Powdered soybean",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Powdered soybean.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Rabbit hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Rabbit hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Red hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Red hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Red ribbon",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Red ribbon.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Rice bowl",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Rice bowl.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Satgat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Satgat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      },
+      {
+        "name": "Straw hat",
+        "condition": {
+          "part": "Body",
+          "values": [
+            "Dark brown",
+            "Dark brown without cheek"
+          ]
+        },
+        "images": [
+          {
+            "path": "12.DARK BROWN HAIR ACCESSORY/Straw hat.png",
+            "drawingOrder": 1200
+          }
+        ]
+      }
+    ]
+  }
+]
