@@ -1,0 +1,1 @@
+{"version":3,"file":"nft-ownership-stats.d.ts","sourceRoot":"","sources":["../../src/api/nft-ownership-stats.ts"],"names":[],"mappings":"AAEA,KAAK,gBAAgB,GAAG;IACtB,KAAK,EAAE,OAAO,CAAC;IACf,YAAY,EAAE,MAAM,CAAC;CACtB,CAAC;AAEF,MAAM,MAAM,uBAAuB,GAAG,MAAM,CAAC,MAAM,EAAE,gBAAgB,CAAC,CAAC;AAEvE,wBAAsB,sBAAsB,CAAC,OAAO,EAAE,KAAK,MAAM,EAAE,GAAG,OAAO,CAAC,uBAAuB,CAAC,CAOrG"}

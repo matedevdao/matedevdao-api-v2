@@ -11,6 +11,22 @@
 			"*/1 * * * *"
 		]
 	},
+	"assets": {
+		"directory": "./assets/",
+		"binding": "ASSETS"
+	},
+	"rules": [
+		{
+			"type": "Data",
+			"globs": [
+				"**/*.bin",
+				"**/*.ttf",
+				"**/*.otf",
+				"**/*.woff",
+				"**/*.woff2"
+			]
+		}
+	],
 	"kv_namespaces": [
 		{
 			"binding": "SIWE_NONCES",

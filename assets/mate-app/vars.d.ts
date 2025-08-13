@@ -1,0 +1,3 @@
+declare const MESSAGE_FOR_WALLET_LOGIN = "Mate\uC5D0 \uB85C\uADF8\uC778\uD558\uB824\uBA74 \uC774 \uBA54\uC2DC\uC9C0\uC5D0 \uC11C\uBA85\uD574 \uC8FC\uC138\uC694.";
+export { MESSAGE_FOR_WALLET_LOGIN };
+//# sourceMappingURL=vars.d.ts.map

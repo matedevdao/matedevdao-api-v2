@@ -1,0 +1,1431 @@
+[
+  {
+    "name": "Background",
+    "parts": [
+      {
+        "name": "Beach",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Background/Beach.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Blue",
+        "percent": 12,
+        "images": [
+          {
+            "path": "Background/Blue.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Brown",
+        "percent": 12,
+        "images": [
+          {
+            "path": "Background/Brown.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Gray",
+        "percent": 12,
+        "images": [
+          {
+            "path": "Background/Gray.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Green Heart",
+        "percent": 9,
+        "images": [
+          {
+            "path": "Background/Green_Heart.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Hills",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Background/Hills.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Music Notes",
+        "percent": 9,
+        "images": [
+          {
+            "path": "Background/Music_Notes.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Pink Heart",
+        "percent": 9,
+        "images": [
+          {
+            "path": "Background/Pink_Heart.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Purple",
+        "percent": 12,
+        "images": [
+          {
+            "path": "Background/Purple.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Rainbow",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Background/Rainbow.png",
+            "drawingOrder": 100
+          }
+        ]
+      },
+      {
+        "name": "Space",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Background/Space.png",
+            "drawingOrder": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Body",
+    "parts": [
+      {
+        "name": "Coco Calf",
+        "percent": 9,
+        "images": [
+          {
+            "path": "Body/Coco_Calf(Lv5).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Kiki Leafmonkey",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Body/Kiki_Leafmonkey(Lv4).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Lahu BengalTiger",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Body/Lahu_BengalTiger(Lv7).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Mamba Boa",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Body/Mamba_Boa(Lv4).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Mighty Mouse",
+        "percent": 11,
+        "images": [
+          {
+            "path": "Body/Mighty_Mouse(Lv3).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Nicon Pony",
+        "percent": 11,
+        "images": [
+          {
+            "path": "Body/Nicon_Pony(Lv3).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Nir GreenDragon",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Body/Nir_GreenDragon(Lv4).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Nyx Rooster",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Body/Nyx_Rooster(Lv7).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Ping Piggy",
+        "percent": 1,
+        "images": [
+          {
+            "path": "Body/Ping_Piggy(Lv10).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Pluto SZDog",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Body/Pluto_SZDog(Lv4).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Pupu Lamb",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Body/Pupu_Lamb(Lv8).png",
+            "drawingOrder": 200
+          }
+        ]
+      },
+      {
+        "name": "Toya Hare",
+        "percent": 11,
+        "images": [
+          {
+            "path": "Body/Toya_Hare(Lv3).png",
+            "drawingOrder": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eye",
+    "parts": [
+      {
+        "name": "Basic",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Eye/Basic.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Blink",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Eye/Blink.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Boeing UVG",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Eye/Boeing_UVG.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Brown Glasses",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Eye/Brown_Glasses.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Eye Shadow B",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Eye/EyeShadow_B.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Eye Shadow O",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Eye/Eyeshadow_O.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Eye Shadow R",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Eye/Eyeshadow_R.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Eye Shadow V",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Eye/Eyeshadow_V.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Gray Glasses",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Eye/Gray_Glasses.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Leopard UVG",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Eye/Leopard_UVG.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Matrix UVG",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Eye/Matrix_UVG.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Pink Glasses",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Eye/Pink_Glasses.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Ski Goggles 1",
+        "percent": 4.5,
+        "images": [
+          {
+            "path": "Eye/Ski_Goggles1.png",
+            "drawingOrder": 300
+          }
+        ]
+      },
+      {
+        "name": "Ski Goggles 2",
+        "percent": 4.5,
+        "images": [
+          {
+            "path": "Eye/Ski_Goggles2.png",
+            "drawingOrder": 300
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cheek",
+    "parts": [
+      {
+        "name": "None",
+        "images": [
+          {
+            "path": "Cheek/None.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Freckles",
+        "images": [
+          {
+            "path": "Cheek/Freckles.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Light Pink",
+        "images": [
+          {
+            "path": "Cheek/Light_Pink.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Orange stripe",
+        "images": [
+          {
+            "path": "Cheek/Orange_stripe.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Pink",
+        "images": [
+          {
+            "path": "Cheek/Pink.png",
+            "drawingOrder": 400
+          }
+        ]
+      },
+      {
+        "name": "Pink Freckles",
+        "images": [
+          {
+            "path": "Cheek/Pink_Freckles.png",
+            "drawingOrder": 400
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mouth",
+    "parts": [
+      {
+        "name": "Bubble Gum B",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Mouth/Bubble_Gum_B.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Bubble Gum P",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Mouth/Bubble_Gum_P.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Bubble Gum Y",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Mouth/Bubble_Gum_Y.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Gas Mask",
+        "percent": 3,
+        "images": [
+          {
+            "path": "Mouth/Gas_Mask.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Grin",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Mouth/Grin.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Laugh",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Mouth/Laugh.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Lips",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Mouth/Lips.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Orange Grin",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Mouth/Orange_Grin.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Orange Lips",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Mouth/Orange_Lips.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Pink Grin",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Mouth/Pink_Grin.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Pink Lips",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Mouth/Pink_Lips.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Purple Grin",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Mouth/Purple_Grin.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Purple Lips",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Mouth/Purple_Lips.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Red Grin",
+        "percent": 6,
+        "images": [
+          {
+            "path": "Mouth/Red_Grin.png",
+            "drawingOrder": 500
+          }
+        ]
+      },
+      {
+        "name": "Red Lips",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Mouth/Red_Lips.png",
+            "drawingOrder": 500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Headgear",
+    "parts": [
+      {
+        "name": "None",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/None.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap Ironman",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Headgear/Cap_Ironman.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap P1",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Cap_P1.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap P2",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Cap_P2.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap Piggy",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Headgear/Cap_Piggy.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap 1",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Cap1.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap 2",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Cap2.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Cap 3",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Cap3.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Fedora",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Fedora.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Jockduri",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Jockduri.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "King Crown",
+        "percent": 2,
+        "images": [
+          {
+            "path": "Headgear/King_Crown.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Queen Crown",
+        "percent": 2,
+        "images": [
+          {
+            "path": "Headgear/Queen_Crown.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Snail Hairband 1",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Headgear/Snail_Hairband1.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Snail Hairband 2",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Headgear/Snail_Hairband2.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Snail Hairband 3",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Headgear/Snail_Hairband3.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Sprout",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Headgear/Sprout.png",
+            "drawingOrder": 600
+          }
+        ]
+      },
+      {
+        "name": "Wizard",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Headgear/Wizard.png",
+            "drawingOrder": 600
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Neck Accesory",
+    "parts": [
+      {
+        "name": "None",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Neck_Accesory/None.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Blue Scarf",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Neck_Accesory/Blue_Scarf.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Blue Star",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Neck_Accesory/Blue_Star.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Fruit Beads",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Neck_Accesory/Fruit_Beads.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Gold",
+        "percent": 2.5,
+        "images": [
+          {
+            "path": "Neck_Accesory/Gold.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Gold Star",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Neck_Accesory/Gold_Star.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Gray Muffler",
+        "percent": 8.5,
+        "images": [
+          {
+            "path": "Neck_Accesory/Gray_Muffler.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Green Muffler",
+        "percent": 8.5,
+        "images": [
+          {
+            "path": "Neck_Accesory/Green_Muffler.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Green Scarf",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Neck_Accesory/Green_Scarf.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Pearl Beads",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Neck_Accesory/Pearl_Beads.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Pink Scarf",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Neck_Accesory/Pink_Scarf.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Red Muffler",
+        "percent": 9,
+        "images": [
+          {
+            "path": "Neck_Accesory/Red_Muffler.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Red Star",
+        "percent": 7,
+        "images": [
+          {
+            "path": "Neck_Accesory/Red_Star.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Silver",
+        "percent": 2.5,
+        "images": [
+          {
+            "path": "Neck_Accesory/Silver.png",
+            "drawingOrder": 700
+          }
+        ]
+      },
+      {
+        "name": "Smiley Beads",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Neck_Accesory/Smiley_Beads.png",
+            "drawingOrder": 700
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bags",
+    "parts": [
+      {
+        "name": "None",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Bags/None(P15).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Cha Ping",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Bags/ChaPing(P30).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Fox",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Bags/Fox(P20).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Gu Ping 1",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Bags/GuPing1(P25).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Gu Ping 2",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Bags/GuPing2(P25).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Gu Ping 3",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Bags/GuPing3(P25).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Lady Bug",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Bags/Lady_Bug(P20).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Lui Ping",
+        "percent": 3,
+        "images": [
+          {
+            "path": "Bags/LuiPing(P35).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Owl",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Bags/Owl(P20).png",
+            "drawingOrder": 800
+          }
+        ]
+      },
+      {
+        "name": "Penguin",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Bags/Penguin(P20).png",
+            "drawingOrder": 800
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shoes",
+    "parts": [
+      {
+        "name": "None",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Shoes/None.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "AJ",
+        "percent": 8.5,
+        "images": [
+          {
+            "path": "Shoes/AJ.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Cowboy Boots",
+        "percent": 3,
+        "images": [
+          {
+            "path": "Shoes/Cowboy_Boots.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Crocs",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Shoes/Crocs.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Leather Shoes",
+        "percent": 12,
+        "images": [
+          {
+            "path": "Shoes/Leather_Shoes.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Purple Shoes",
+        "percent": 12,
+        "images": [
+          {
+            "path": "Shoes/Purple_Shoes.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Sandals",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Shoes/Sandal.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Slippers",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Shoes/Slipper.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Ugg Boots",
+        "percent": 3,
+        "images": [
+          {
+            "path": "Shoes/Ugg_Boots.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Ugly Shoes",
+        "percent": 8.5,
+        "images": [
+          {
+            "path": "Shoes/Ugly_Shoes.png",
+            "drawingOrder": 900
+          }
+        ]
+      },
+      {
+        "name": "Walkers",
+        "percent": 3,
+        "images": [
+          {
+            "path": "Shoes/Walkers.png",
+            "drawingOrder": 900
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wrist Accesory",
+    "parts": [
+      {
+        "name": "None",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Wrist_Accesory/None.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Beads",
+        "percent": 18,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Beads.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Flower Beads",
+        "percent": 18,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Flower_Beads.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Gold Digital Watch",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Gold_Digital_Watch.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Gold Watch",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Gold_Watch.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Infinity",
+        "percent": 15,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Infinity.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Silver Digital Watch",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Silver_Digital_Watch.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Silver Watch",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Silver_Watch.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Smart Watch 1",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Smart_Watch1.png",
+            "drawingOrder": 1000
+          }
+        ]
+      },
+      {
+        "name": "Smart Watch 2",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Wrist_Accesory/Smart_Watch2.png",
+            "drawingOrder": 1000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Item",
+    "parts": [
+      {
+        "name": "None",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Item/None.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Baby Bottle",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Item/Baby_Bottle.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Baseball Bat",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Item/Baseball_Bat.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Blue CC",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Item/Blue_CC.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Blue Umbrella",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Item/Blue_Umbrella.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Chicken Drumstick",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Item/Chicken_Drumstick.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Corndog",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Item/Corndog.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Doll",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Item/Doll.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Green Car",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Item/Green_Car.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Green Umbrella",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Item/Green_Umbrella.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Magic Axe",
+        "percent": 2,
+        "images": [
+          {
+            "path": "Item/Magic_Axe.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Magic Wand",
+        "percent": 2,
+        "images": [
+          {
+            "path": "Item/Magic_Wand.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Microphone",
+        "percent": 4,
+        "images": [
+          {
+            "path": "Item/Microphone.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Orange Umbrella",
+        "percent": 10,
+        "images": [
+          {
+            "path": "Item/Orange_Umbrella.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Pink CC",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Item/Pink_CC.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Red Car",
+        "percent": 5,
+        "images": [
+          {
+            "path": "Item/Red_Car.png",
+            "drawingOrder": 1100
+          }
+        ]
+      },
+      {
+        "name": "Yellow CC",
+        "percent": 8,
+        "images": [
+          {
+            "path": "Item/Yellow_CC.png",
+            "drawingOrder": 1100
+          }
+        ]
+      }
+    ]
+  }
+]
