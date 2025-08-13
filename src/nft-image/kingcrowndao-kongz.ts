@@ -10,7 +10,7 @@ export async function generateKingCrowndaoKongzImage(env: Env, url: string, data
     skins.push(`${partName}/${part}`);
   }
 
-  const images: { path: string; drawingOrder: number }[] = [];
+  const images: { path: string; drawOrder: number }[] = [];
   for (const [partName, partValue] of Object.entries(data.parts)) {
     const category = parts.find((cat) => cat.name === partName);
     if (category) {
@@ -19,7 +19,7 @@ export async function generateKingCrowndaoKongzImage(env: Env, url: string, data
         for (const image of part.images) {
           images.push({
             path: `/kingcrowndao-kongz/parts-images/${image.path}`,
-            drawingOrder: image.drawingOrder,
+            drawOrder: image.drawOrder,
           });
         }
       }

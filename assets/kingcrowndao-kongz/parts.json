@@ -7,7 +7,7 @@
         "images": [
           {
             "path": "backgrounds/blue.png",
-            "drawingOrder": 0
+            "drawOrder": 0
           }
         ]
       },
@@ -16,7 +16,7 @@
         "images": [
           {
             "path": "backgrounds/green.png",
-            "drawingOrder": 0
+            "drawOrder": 0
           }
         ]
       },
@@ -25,7 +25,7 @@
         "images": [
           {
             "path": "backgrounds/yellow.png",
-            "drawingOrder": 0
+            "drawOrder": 0
           }
         ]
       },
@@ -34,7 +34,7 @@
         "images": [
           {
             "path": "backgrounds/pink.png",
-            "drawingOrder": 0
+            "drawOrder": 0
           }
         ]
       },
@@ -43,7 +43,7 @@
         "images": [
           {
             "path": "backgrounds/purple.png",
-            "drawingOrder": 0
+            "drawOrder": 0
           }
         ]
       },
@@ -52,7 +52,7 @@
         "images": [
           {
             "path": "backgrounds/orange.png",
-            "drawingOrder": 0
+            "drawOrder": 0
           }
         ]
       }
@@ -66,7 +66,7 @@
         "images": [
           {
             "path": "character.png",
-            "drawingOrder": 1
+            "drawOrder": 1
           }
         ]
       }
@@ -83,7 +83,7 @@
         "images": [
           {
             "path": "outfits/suit.png",
-            "drawingOrder": 2
+            "drawOrder": 2
           }
         ]
       },
@@ -92,7 +92,7 @@
         "images": [
           {
             "path": "outfits/indian clothes.png",
-            "drawingOrder": 2
+            "drawOrder": 2
           }
         ]
       },
@@ -101,7 +101,7 @@
         "images": [
           {
             "path": "outfits/superhero.png",
-            "drawingOrder": 2
+            "drawOrder": 2
           }
         ]
       },
@@ -110,7 +110,7 @@
         "images": [
           {
             "path": "outfits/tanktop.png",
-            "drawingOrder": 2
+            "drawOrder": 2
           }
         ]
       },
@@ -119,7 +119,7 @@
         "images": [
           {
             "path": "outfits/doctor outfit.png",
-            "drawingOrder": 2
+            "drawOrder": 2
           }
         ]
       },
@@ -128,7 +128,7 @@
         "images": [
           {
             "path": "outfits/chinese man outfit.png",
-            "drawingOrder": 2
+            "drawOrder": 2
           }
         ]
       }
@@ -142,7 +142,7 @@
         "images": [
           {
             "path": "eyes/closed eyes.png",
-            "drawingOrder": 3
+            "drawOrder": 3
           }
         ]
       },
@@ -151,7 +151,7 @@
         "images": [
           {
             "path": "eyes/open eyes.png",
-            "drawingOrder": 3
+            "drawOrder": 3
           }
         ]
       },
@@ -160,7 +160,7 @@
         "images": [
           {
             "path": "eyes/smile eyes.png",
-            "drawingOrder": 3
+            "drawOrder": 3
           }
         ]
       }
@@ -177,7 +177,7 @@
         "images": [
           {
             "path": "eyewears/sunglasses.png",
-            "drawingOrder": 4
+            "drawOrder": 4
           }
         ]
       },
@@ -186,7 +186,7 @@
         "images": [
           {
             "path": "eyewears/red glasses.png",
-            "drawingOrder": 4
+            "drawOrder": 4
           }
         ]
       },
@@ -195,7 +195,7 @@
         "images": [
           {
             "path": "eyewears/study glasses.png",
-            "drawingOrder": 4
+            "drawOrder": 4
           }
         ]
       }
@@ -212,7 +212,7 @@
         "images": [
           {
             "path": "accesories/bow.png",
-            "drawingOrder": 5
+            "drawOrder": 5
           }
         ]
       },
@@ -221,7 +221,7 @@
         "images": [
           {
             "path": "accesories/neck band.png",
-            "drawingOrder": 5
+            "drawOrder": 5
           }
         ]
       },
@@ -230,7 +230,7 @@
         "images": [
           {
             "path": "accesories/camera.png",
-            "drawingOrder": 5
+            "drawOrder": 5
           }
         ]
       },
@@ -239,7 +239,7 @@
         "images": [
           {
             "path": "accesories/superhero necklacepng.png",
-            "drawingOrder": 5
+            "drawOrder": 5
           }
         ]
       },
@@ -248,7 +248,7 @@
         "images": [
           {
             "path": "accesories/doctor scope.png",
-            "drawingOrder": 5
+            "drawOrder": 5
           }
         ]
       },
@@ -257,7 +257,7 @@
         "images": [
           {
             "path": "accesories/necklace.png",
-            "drawingOrder": 5
+            "drawOrder": 5
           }
         ]
       }
@@ -274,7 +274,7 @@
         "images": [
           {
             "path": "headwears/cowboy hat.png",
-            "drawingOrder": 6
+            "drawOrder": 6
           }
         ]
       },
@@ -283,7 +283,7 @@
         "images": [
           {
             "path": "headwears/chef hat.png",
-            "drawingOrder": 6
+            "drawOrder": 6
           }
         ]
       },
@@ -292,7 +292,7 @@
         "images": [
           {
             "path": "headwears/top hat.png",
-            "drawingOrder": 6
+            "drawOrder": 6
           }
         ]
       },
@@ -301,7 +301,7 @@
         "images": [
           {
             "path": "headwears/baseball hat.png",
-            "drawingOrder": 6
+            "drawOrder": 6
           }
         ]
       },
@@ -310,7 +310,7 @@
         "images": [
           {
             "path": "headwears/nurse hat.png",
-            "drawingOrder": 6
+            "drawOrder": 6
           }
         ]
       },
@@ -319,7 +319,7 @@
         "images": [
           {
             "path": "headwears/crown.png",
-            "drawingOrder": 6
+            "drawOrder": 6
           }
         ]
       }
@@ -333,7 +333,7 @@
         "images": [
           {
             "path": "mouths/meh mouthpng.png",
-            "drawingOrder": 7
+            "drawOrder": 7
           }
         ]
       },
@@ -342,7 +342,7 @@
         "images": [
           {
             "path": "mouths/teeth mouth.png",
-            "drawingOrder": 7
+            "drawOrder": 7
           }
         ]
       },
@@ -351,7 +351,7 @@
         "images": [
           {
             "path": "mouths/happy mouth.png",
-            "drawingOrder": 7
+            "drawOrder": 7
           }
         ]
       },
@@ -360,7 +360,7 @@
         "images": [
           {
             "path": "mouths/sad mouth.png",
-            "drawingOrder": 7
+            "drawOrder": 7
           }
         ]
       },
@@ -369,7 +369,7 @@
         "images": [
           {
             "path": "mouths/closed mouth.png",
-            "drawingOrder": 7
+            "drawOrder": 7
           }
         ]
       },
@@ -378,7 +378,7 @@
         "images": [
           {
             "path": "mouths/o mouth.png",
-            "drawingOrder": 7
+            "drawOrder": 7
           }
         ]
       }

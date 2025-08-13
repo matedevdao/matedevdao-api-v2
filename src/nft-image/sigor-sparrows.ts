@@ -14,7 +14,7 @@ export async function generateSigorSparrowsImage(env: Env, url: string, data: {
   const style = data.traits!['Style'] as string;
   const stylePath = style === 'Illustration' ? 'normal' : 'pixel';
 
-  const images: { path: string; drawingOrder: number }[] = [];
+  const images: { path: string; drawOrder: number }[] = [];
   for (const [partName, partValue] of Object.entries(data.parts)) {
     if (stylePath === 'pixel' && partName === 'Text Balloon') continue;
     const category = parts.find((cat) => cat.name === partName);
@@ -24,7 +24,7 @@ export async function generateSigorSparrowsImage(env: Env, url: string, data: {
         for (const image of part.images) {
           images.push({
             path: `/sigor-sparrows/parts-images/${stylePath}/${image.path}`,
-            drawingOrder: image.drawingOrder,
+            drawOrder: image.drawOrder,
           });
         }
       }

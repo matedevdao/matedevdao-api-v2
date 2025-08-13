@@ -7,7 +7,7 @@
         "images": [
           {
             "path": "1.BG/IJM beige.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       },
@@ -16,7 +16,7 @@
         "images": [
           {
             "path": "1.BG/Light green.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       },
@@ -25,7 +25,7 @@
         "images": [
           {
             "path": "1.BG/Light steel blue.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       },
@@ -34,7 +34,7 @@
         "images": [
           {
             "path": "1.BG/Pastel green.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       },
@@ -43,7 +43,7 @@
         "images": [
           {
             "path": "1.BG/Rainbow.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       },
@@ -52,7 +52,7 @@
         "images": [
           {
             "path": "1.BG/Sky blue.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       },
@@ -61,7 +61,7 @@
         "images": [
           {
             "path": "1.BG/White.png",
-            "drawingOrder": 100
+            "drawOrder": 100
           }
         ]
       }
@@ -75,7 +75,7 @@
         "images": [
           {
             "path": "2.TAIL/Cock.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -84,7 +84,7 @@
         "images": [
           {
             "path": "2.TAIL/Duck.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -93,7 +93,7 @@
         "images": [
           {
             "path": "2.TAIL/Eagle.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -102,7 +102,7 @@
         "images": [
           {
             "path": "2.TAIL/Ostrich.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -111,7 +111,7 @@
         "images": [
           {
             "path": "2.TAIL/Phoenix.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -120,7 +120,7 @@
         "images": [
           {
             "path": "2.TAIL/Pigeon.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -129,7 +129,7 @@
         "images": [
           {
             "path": "2.TAIL/Sparrow.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       },
@@ -138,7 +138,7 @@
         "images": [
           {
             "path": "2.TAIL/Turkey.png",
-            "drawingOrder": 200
+            "drawOrder": 200
           }
         ]
       }
@@ -152,7 +152,7 @@
         "images": [
           {
             "path": "3.BODY/Brown.png",
-            "drawingOrder": 300
+            "drawOrder": 300
           }
         ]
       },
@@ -161,7 +161,7 @@
         "images": [
           {
             "path": "3.BODY/Brown-without cheek.png",
-            "drawingOrder": 300
+            "drawOrder": 300
           }
         ]
       },
@@ -170,7 +170,7 @@
         "images": [
           {
             "path": "3.BODY/Dark brown.png",
-            "drawingOrder": 300
+            "drawOrder": 300
           }
         ]
       },
@@ -179,7 +179,7 @@
         "images": [
           {
             "path": "3.BODY/Dark brown-without cheek.png",
-            "drawingOrder": 300
+            "drawOrder": 300
           }
         ]
       }
@@ -193,7 +193,7 @@
         "images": [
           {
             "path": "4.BACK/A bag of rice.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -202,7 +202,7 @@
         "images": [
           {
             "path": "4.BACK/apples.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -211,7 +211,7 @@
         "images": [
           {
             "path": "4.BACK/Cracked egg.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -220,7 +220,7 @@
         "images": [
           {
             "path": "4.BACK/Ddong Young Jae.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -229,7 +229,7 @@
         "images": [
           {
             "path": "4.BACK/JOKER.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -238,7 +238,7 @@
         "images": [
           {
             "path": "4.BACK/Dinosaur Egg.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -247,7 +247,7 @@
         "images": [
           {
             "path": "4.BACK/Empty Basket.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -256,7 +256,7 @@
         "images": [
           {
             "path": "4.BACK/Green apples.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -265,7 +265,7 @@
         "images": [
           {
             "path": "4.BACK/None.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -274,7 +274,7 @@
         "images": [
           {
             "path": "4.BACK/Powdered soybean.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -283,7 +283,7 @@
         "images": [
           {
             "path": "4.BACK/Rock Young Jae.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -292,7 +292,7 @@
         "images": [
           {
             "path": "4.BACK/Rock.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -301,7 +301,7 @@
         "images": [
           {
             "path": "4.BACK/Sweet potato.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -310,7 +310,7 @@
         "images": [
           {
             "path": "4.BACK/Tangerine.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       },
@@ -319,7 +319,7 @@
         "images": [
           {
             "path": "4.BACK/Tomatos.png",
-            "drawingOrder": 400
+            "drawOrder": 400
           }
         ]
       }
@@ -333,7 +333,7 @@
         "images": [
           {
             "path": "5.EYES/Brave eyes.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -342,7 +342,7 @@
         "images": [
           {
             "path": "5.EYES/Cock.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -351,7 +351,7 @@
         "images": [
           {
             "path": "5.EYES/Doge.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -360,7 +360,7 @@
         "images": [
           {
             "path": "5.EYES/Duck.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -369,7 +369,7 @@
         "images": [
           {
             "path": "5.EYES/Eagle.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -378,7 +378,7 @@
         "images": [
           {
             "path": "5.EYES/Heart.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -387,7 +387,7 @@
         "images": [
           {
             "path": "5.EYES/IJM.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -396,7 +396,7 @@
         "images": [
           {
             "path": "5.EYES/Indifferent eyes.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -405,7 +405,7 @@
         "images": [
           {
             "path": "5.EYES/Kind eye.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -414,7 +414,7 @@
         "images": [
           {
             "path": "5.EYES/Mad eyes.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -423,7 +423,7 @@
         "images": [
           {
             "path": "5.EYES/Naive eyes.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -432,7 +432,7 @@
         "images": [
           {
             "path": "5.EYES/Ostrich.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -441,7 +441,7 @@
         "images": [
           {
             "path": "5.EYES/Owl.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -450,7 +450,7 @@
         "images": [
           {
             "path": "5.EYES/Parrot.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -459,7 +459,7 @@
         "images": [
           {
             "path": "5.EYES/Penguin.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -468,7 +468,7 @@
         "images": [
           {
             "path": "5.EYES/Pigeon.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -477,7 +477,7 @@
         "images": [
           {
             "path": "5.EYES/Registered eyes.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -486,7 +486,7 @@
         "images": [
           {
             "path": "5.EYES/Seagull.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -495,7 +495,7 @@
         "images": [
           {
             "path": "5.EYES/Sparrow.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -504,7 +504,7 @@
         "images": [
           {
             "path": "5.EYES/Tearful eyes.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       },
@@ -513,7 +513,7 @@
         "images": [
           {
             "path": "5.EYES/Turkey.png",
-            "drawingOrder": 500
+            "drawOrder": 500
           }
         ]
       }
@@ -527,7 +527,7 @@
         "images": [
           {
             "path": "6.BEAK/Bald Eagle.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -536,7 +536,7 @@
         "images": [
           {
             "path": "6.BEAK/Cock.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -545,7 +545,7 @@
         "images": [
           {
             "path": "6.BEAK/Duck.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -554,7 +554,7 @@
         "images": [
           {
             "path": "6.BEAK/Eagle.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -563,7 +563,7 @@
         "images": [
           {
             "path": "6.BEAK/Ostrich.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -572,7 +572,7 @@
         "images": [
           {
             "path": "6.BEAK/Owl.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -581,7 +581,7 @@
         "images": [
           {
             "path": "6.BEAK/Parrot.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -590,7 +590,7 @@
         "images": [
           {
             "path": "6.BEAK/Penguin.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -599,7 +599,7 @@
         "images": [
           {
             "path": "6.BEAK/Pigeon.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -608,7 +608,7 @@
         "images": [
           {
             "path": "6.BEAK/Seagull.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -617,7 +617,7 @@
         "images": [
           {
             "path": "6.BEAK/Sparrow.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       },
@@ -626,7 +626,7 @@
         "images": [
           {
             "path": "6.BEAK/Turkey.png",
-            "drawingOrder": 600
+            "drawOrder": 600
           }
         ]
       }
@@ -640,7 +640,7 @@
         "images": [
           {
             "path": "7.SHOES/2didas.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -649,7 +649,7 @@
         "images": [
           {
             "path": "7.SHOES/Duck.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -658,7 +658,7 @@
         "images": [
           {
             "path": "7.SHOES/Eagle.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -667,7 +667,7 @@
         "images": [
           {
             "path": "7.SHOES/None.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -676,7 +676,7 @@
         "images": [
           {
             "path": "7.SHOES/Rabbit.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -685,7 +685,7 @@
         "images": [
           {
             "path": "7.SHOES/Rubber shoe B.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -694,7 +694,7 @@
         "images": [
           {
             "path": "7.SHOES/Rubber shoe W.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       },
@@ -703,7 +703,7 @@
         "images": [
           {
             "path": "7.SHOES/Sneakers.png",
-            "drawingOrder": 700
+            "drawOrder": 700
           }
         ]
       }
@@ -717,7 +717,7 @@
         "images": [
           {
             "path": "8.TEXT BALLOON/Innermost feelings.png",
-            "drawingOrder": 800
+            "drawOrder": 800
           }
         ]
       },
@@ -726,7 +726,7 @@
         "images": [
           {
             "path": "8.TEXT BALLOON/Shout out.png",
-            "drawingOrder": 800
+            "drawOrder": 800
           }
         ]
       },
@@ -735,7 +735,7 @@
         "images": [
           {
             "path": "8.TEXT BALLOON/Talk.png",
-            "drawingOrder": 800
+            "drawOrder": 800
           }
         ]
       }
@@ -756,7 +756,7 @@
         "images": [
           {
             "path": "9.BROWN WINGS/Fighting.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -772,7 +772,7 @@
         "images": [
           {
             "path": "9.BROWN WINGS/Greet.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -788,7 +788,7 @@
         "images": [
           {
             "path": "9.BROWN WINGS/Hold item.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -804,7 +804,7 @@
         "images": [
           {
             "path": "9.BROWN WINGS/Hug item.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -813,7 +813,7 @@
         "images": [
           {
             "path": "9.BROWN WINGS/None.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -829,7 +829,7 @@
         "images": [
           {
             "path": "9.BROWN WINGS/Scold.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -845,7 +845,7 @@
         "images": [
           {
             "path": "9.DARK BROWN WINGS/Fighting.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -861,7 +861,7 @@
         "images": [
           {
             "path": "9.DARK BROWN WINGS/Greet.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -877,7 +877,7 @@
         "images": [
           {
             "path": "9.DARK BROWN WINGS/Hold item.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -893,7 +893,7 @@
         "images": [
           {
             "path": "9.DARK BROWN WINGS/Hug item.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       },
@@ -909,7 +909,7 @@
         "images": [
           {
             "path": "9.DARK BROWN WINGS/Scold.png",
-            "drawingOrder": 900
+            "drawOrder": 900
           }
         ]
       }
@@ -929,7 +929,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/A glass of water.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -938,7 +938,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Brush.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -947,7 +947,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Carrot.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -956,7 +956,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Corn.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -965,7 +965,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Lily of the valley.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -974,7 +974,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Magic wand.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -983,7 +983,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Microphone.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -992,7 +992,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Poop stick.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -1001,7 +1001,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Potato.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -1010,7 +1010,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Rice.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -1019,7 +1019,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Spoon.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -1028,7 +1028,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Spring onion.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -1037,7 +1037,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Sweet potato.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       },
@@ -1046,7 +1046,7 @@
         "images": [
           {
             "path": "10.HOLD ITEM/Towel.png",
-            "drawingOrder": 1000
+            "drawOrder": 1000
           }
         ]
       }
@@ -1066,7 +1066,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Beach ball.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1075,7 +1075,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Bouquet.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1084,7 +1084,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Camera.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1093,7 +1093,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Ethereum.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1102,7 +1102,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Gift box.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1111,7 +1111,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Injeolmi.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1120,7 +1120,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Kkultteok.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1129,7 +1129,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Klaytn.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1138,7 +1138,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Mujigaetteok.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1147,7 +1147,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Pencil and notebook.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1156,7 +1156,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Polygon ETH.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       },
@@ -1165,7 +1165,7 @@
         "images": [
           {
             "path": "11.HUG ITEM/Pot-Injeolmi.png",
-            "drawingOrder": 1100
+            "drawOrder": 1100
           }
         ]
       }
@@ -1186,7 +1186,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/A roasted chestnut hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1202,7 +1202,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Ant hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1218,7 +1218,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Blue ribbon.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1234,7 +1234,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Bump.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1250,7 +1250,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Camellia.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1266,7 +1266,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Chef's hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1282,7 +1282,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Chestnut haircut.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1298,7 +1298,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Cockscomb.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1314,7 +1314,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Cone-gratulation.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1330,7 +1330,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Detective hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1346,7 +1346,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Disheveled hair.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1362,7 +1362,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Drunken tie.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1378,7 +1378,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Frog hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1394,7 +1394,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Gentleman hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1410,7 +1410,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Graduation cap.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1426,7 +1426,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Green ribbon.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1442,7 +1442,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Hair point.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1458,7 +1458,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Horn.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1474,7 +1474,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Jokduri.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1490,7 +1490,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Katydid hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1506,7 +1506,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Kindergarten hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1522,7 +1522,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Korea perm.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1538,7 +1538,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/None.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1554,7 +1554,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Police hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1570,7 +1570,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Powdered soybean.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1586,7 +1586,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Rabbit hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1602,7 +1602,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Red hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1618,7 +1618,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Red ribbon.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1634,7 +1634,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Rice bowl.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1650,7 +1650,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Satgat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1666,7 +1666,7 @@
         "images": [
           {
             "path": "12.BROWN HAIR ACCESSORY/Straw hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1682,7 +1682,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/A roasted chestnut hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1698,7 +1698,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Ant hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1714,7 +1714,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Blue ribbon.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1730,7 +1730,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Bump.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1746,7 +1746,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Camellia.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1762,7 +1762,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Chef's hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1778,7 +1778,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Chestnut haircut.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1794,7 +1794,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Cockscomb.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1810,7 +1810,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Cone-gratulation.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1826,7 +1826,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Detective hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1842,7 +1842,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Disheveled hair.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1858,7 +1858,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Drunken tie.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1874,7 +1874,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Frog hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1890,7 +1890,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Gentleman hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1906,7 +1906,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Graduation cap.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1922,7 +1922,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Green ribbon.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1938,7 +1938,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Hair point.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1954,7 +1954,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Horn.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1970,7 +1970,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Jokduri.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -1986,7 +1986,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Katydid hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2002,7 +2002,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Kindergarten hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2018,7 +2018,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Korea perm.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2034,7 +2034,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/None.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2050,7 +2050,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Police hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2066,7 +2066,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Powdered soybean.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2082,7 +2082,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Rabbit hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2098,7 +2098,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Red hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2114,7 +2114,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Red ribbon.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2130,7 +2130,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Rice bowl.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2146,7 +2146,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Satgat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       },
@@ -2162,7 +2162,7 @@
         "images": [
           {
             "path": "12.DARK BROWN HAIR ACCESSORY/Straw hat.png",
-            "drawingOrder": 1200
+            "drawOrder": 1200
           }
         ]
       }
