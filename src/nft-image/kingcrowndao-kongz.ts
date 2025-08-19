@@ -18,7 +18,7 @@ export async function generateKingCrowndaoKongzImage(env: Env, url: string, data
       if (part?.images) {
         for (const image of part.images) {
           images.push({
-            path: `/kingcrowndao-kongz/parts-images/${image.path}`,
+            path: `/kingcrowndao-kongz/part-images/${image.path}`,
             drawOrder: image.drawOrder,
           });
         }

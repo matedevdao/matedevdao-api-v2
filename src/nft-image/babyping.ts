@@ -18,7 +18,7 @@ export async function generateBabyPingImage(env: Env, url: string, data: {
       if (part?.images) {
         for (const image of part.images) {
           images.push({
-            path: `/babyping/parts-images/${image.path}`,
+            path: `/babyping/part-images/${image.path}`,
             drawOrder: image.drawOrder,
           });
         }

@@ -23,7 +23,7 @@ export async function generateSigorSparrowsImage(env: Env, url: string, data: {
       if (part?.images) {
         for (const image of part.images) {
           images.push({
-            path: `/sigor-sparrows/parts-images/${stylePath}/${image.path}`,
+            path: `/sigor-sparrows/part-images/${stylePath}/${image.path}`,
             drawOrder: image.drawOrder,
           });
         }
