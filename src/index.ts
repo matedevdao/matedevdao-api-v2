@@ -1,4 +1,4 @@
-import { handleLogin, handleNonce, handleUploadImage, handleValidateToken, preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
+import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
 import { createPublicClient, http } from "viem";
 import { kaia } from "viem/chains";
 import { ChatRoom } from "./do/chat-room";
@@ -97,6 +97,17 @@ export default {
     if (url.pathname === '/set-main-nft') return handleSetMainNft(request, env);
     if (url.pathname === '/get-my-main-nft') return handleGetMyMainNft(request, env);
     if (url.pathname === '/get-main-nfts-with-info') return handleGetMainNftsWithInfo(request, env);
+
+    // Google Login
+    if (url.pathname === '/google-login') return handleGoogleLogin(request, env);
+    if (url.pathname === '/oauth2/callback') return handleOAuth2Callback(request, env);
+    if (url.pathname === '/oauth2/verify') return handleOAuth2Verify(request, env);
+    if (url.pathname === '/google-me') return handleGoogleMe(request, env);
+    if (url.pathname === '/google-logout') return handleGoogleLogout(request);
+    if (url.pathname === '/google-link-web3-wallet' && request.method === 'POST') return handleLinkGoogleWeb3Wallet(request, env);
+    if (url.pathname === '/google-unlink-web3-wallet-by-token' && request.method === 'POST') return handleUnlinkGoogleWeb3WalletByToken(request, env);
+    if (url.pathname === '/google-unlink-web3-wallet-by-session' && request.method === 'POST') return handleUnlinkGoogleWeb3WalletBySession(request, env);
+    if (url.pathname === '/google-me-by-wallet') return handleGoogleMeByWallet(request, env);
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
     if (chatMatch) {
