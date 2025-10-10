@@ -1,4 +1,4 @@
-import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, preflightResponse, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
+import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, preflightResponse, preflightResponseWithOrigin, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
 import { createPublicClient, http } from "viem";
 import { kaia } from "viem/chains";
 import { ChatRoom } from "./do/chat-room";
@@ -83,9 +83,86 @@ export default {
       console.error('Error sending message:', error);
     }*/
 
-    if (request.method === 'OPTIONS') return preflightResponse();
-
     const url = new URL(request.url);
+
+    // Google Login
+    if (url.pathname === '/google-login/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      return handleGoogleLogin(request, env, env.GOOGLE_MATEAPP_REDIRECT_URI);
+    }
+    if (url.pathname === '/google-login/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      return handleGoogleLogin(request, env, env.GOOGLE_SIGOR_REDIRECT_URI);
+    }
+
+    if (url.pathname === '/oauth2/callback/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      return handleOAuth2Callback(request, env, env.GOOGLE_MATEAPP_REDIRECT_URI, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/oauth2/callback/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      return handleOAuth2Callback(request, env, env.GOOGLE_SIGOR_REDIRECT_URI, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/google-logout/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      return handleGoogleLogout(request, env.GOOGLE_MATEAPP_ORIGIN, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/google-logout/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      return handleGoogleLogout(request, env.GOOGLE_SIGOR_ORIGIN, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/oauth2/verify/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      return handleOAuth2Verify(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/oauth2/verify/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      return handleOAuth2Verify(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/google-me/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      return handleGoogleMe(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/google-me/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      return handleGoogleMe(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/google-link-web3-wallet/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      if (request.method === 'POST') return handleLinkGoogleWeb3Wallet(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/google-link-web3-wallet/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      if (request.method === 'POST') return handleLinkGoogleWeb3Wallet(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/google-unlink-web3-wallet-by-token/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      if (request.method === 'POST') return handleUnlinkGoogleWeb3WalletByToken(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/google-unlink-web3-wallet-by-token/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      if (request.method === 'POST') return handleUnlinkGoogleWeb3WalletByToken(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/google-unlink-web3-wallet-by-session/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      if (request.method === 'POST') return handleUnlinkGoogleWeb3WalletBySession(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/google-unlink-web3-wallet-by-session/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      if (request.method === 'POST') return handleUnlinkGoogleWeb3WalletBySession(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    }
+
+    if (url.pathname === '/google-me-by-wallet/mateapp') return handleGoogleMeByWallet(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    if (url.pathname === '/google-me-by-wallet/sigor') return handleGoogleMeByWallet(request, env, env.GOOGLE_SIGOR_ORIGIN);
+
+    // Other APIs
+    if (request.method === 'OPTIONS') return preflightResponse();
     if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
     if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
@@ -97,17 +174,6 @@ export default {
     if (url.pathname === '/set-main-nft') return handleSetMainNft(request, env);
     if (url.pathname === '/get-my-main-nft') return handleGetMyMainNft(request, env);
     if (url.pathname === '/get-main-nfts-with-info') return handleGetMainNftsWithInfo(request, env);
-
-    // Google Login
-    if (url.pathname === '/google-login') return handleGoogleLogin(request, env);
-    if (url.pathname === '/oauth2/callback') return handleOAuth2Callback(request, env);
-    if (url.pathname === '/oauth2/verify') return handleOAuth2Verify(request, env);
-    if (url.pathname === '/google-me') return handleGoogleMe(request, env);
-    if (url.pathname === '/google-logout') return handleGoogleLogout(request);
-    if (url.pathname === '/google-link-web3-wallet' && request.method === 'POST') return handleLinkGoogleWeb3Wallet(request, env);
-    if (url.pathname === '/google-unlink-web3-wallet-by-token' && request.method === 'POST') return handleUnlinkGoogleWeb3WalletByToken(request, env);
-    if (url.pathname === '/google-unlink-web3-wallet-by-session' && request.method === 'POST') return handleUnlinkGoogleWeb3WalletBySession(request, env);
-    if (url.pathname === '/google-me-by-wallet') return handleGoogleMeByWallet(request, env);
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
     if (chatMatch) {

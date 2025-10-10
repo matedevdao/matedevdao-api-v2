@@ -54,8 +54,11 @@
 		"ALLOWED_URI": "https://matedevdao.github.io",
 		"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요.",
 		"GOOGLE_CLIENT_ID": "996341622273-ph42ssb0778khivgjpuj7sbmg6hjrk2o.apps.googleusercontent.com",
-		"GOOGLE_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback",
+		"GOOGLE_MATEAPP_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/mateapp",
+		"GOOGLE_SIGOR_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/sigor",
 		"SESSION_TTL_DAYS": "7",
+		"GOOGLE_MATEAPP_ORIGIN": "https://matedevdao.github.io",
+		"GOOGLE_SIGOR_ORIGIN": "https://sigor.com"
 	},
 	"migrations": [
 		{
@@ -100,8 +103,11 @@
 				"ALLOWED_URI": "http://localhost:8080",
 				"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요.",
 				"GOOGLE_CLIENT_ID": "996341622273-ph42ssb0778khivgjpuj7sbmg6hjrk2o.apps.googleusercontent.com",
-				"GOOGLE_REDIRECT_URI": "http://localhost:8081/oauth2/callback",
+				"GOOGLE_MATEAPP_REDIRECT_URI": "http://localhost:8081/oauth2/callback/mateapp",
+				"GOOGLE_SIGOR_REDIRECT_URI": "http://localhost:8081/oauth2/callback/sigor",
 				"SESSION_TTL_DAYS": "7",
+				"GOOGLE_MATEAPP_ORIGIN": "http://localhost:8080",
+				"GOOGLE_SIGOR_ORIGIN": "http://localhost:8080"
 			},
 			"services": [
 				{
