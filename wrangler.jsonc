@@ -57,7 +57,7 @@
 		"GOOGLE_MATEAPP_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/mateapp",
 		"GOOGLE_SIGOR_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/sigor",
 		"SESSION_TTL_DAYS": "7",
-		"GOOGLE_MATEAPP_ORIGIN": "https://matedevdao.github.io",
+		"GOOGLE_MATEAPP_ORIGIN": "https://matedevdao.github.io/mate-app",
 		"GOOGLE_SIGOR_ORIGIN": "https://sigor.com"
 	},
 	"migrations": [

@@ -158,8 +158,14 @@ export default {
       if (request.method === 'POST') return handleUnlinkGoogleWeb3WalletBySession(request, env, env.GOOGLE_SIGOR_ORIGIN);
     }
 
-    if (url.pathname === '/google-me-by-wallet/mateapp') return handleGoogleMeByWallet(request, env, env.GOOGLE_MATEAPP_ORIGIN);
-    if (url.pathname === '/google-me-by-wallet/sigor') return handleGoogleMeByWallet(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    if (url.pathname === '/google-me-by-wallet/mateapp') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
+      return handleGoogleMeByWallet(request, env, env.GOOGLE_MATEAPP_ORIGIN);
+    }
+    if (url.pathname === '/google-me-by-wallet/sigor') {
+      if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
+      return handleGoogleMeByWallet(request, env, env.GOOGLE_SIGOR_ORIGIN);
+    }
 
     // Other APIs
     if (request.method === 'OPTIONS') return preflightResponse();
