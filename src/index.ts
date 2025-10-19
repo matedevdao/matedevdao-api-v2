@@ -97,20 +97,20 @@ export default {
 
     if (url.pathname === '/oauth2/callback/mateapp') {
       if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
-      return handleOAuth2Callback(request, env, env.GOOGLE_MATEAPP_REDIRECT_URI, env.GOOGLE_MATEAPP_ORIGIN);
+      return handleOAuth2Callback(request, env, env.GOOGLE_MATEAPP_REDIRECT_URI, env.GOOGLE_MATEAPP_REDIRECT_TO);
     }
     if (url.pathname === '/oauth2/callback/sigor') {
       if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
-      return handleOAuth2Callback(request, env, env.GOOGLE_SIGOR_REDIRECT_URI, env.GOOGLE_SIGOR_ORIGIN);
+      return handleOAuth2Callback(request, env, env.GOOGLE_SIGOR_REDIRECT_URI, env.GOOGLE_SIGOR_REDIRECT_TO);
     }
 
     if (url.pathname === '/google-logout/mateapp') {
       if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_MATEAPP_ORIGIN);
-      return handleGoogleLogout(request, env.GOOGLE_MATEAPP_ORIGIN, env.GOOGLE_MATEAPP_ORIGIN);
+      return handleGoogleLogout(request, env.GOOGLE_MATEAPP_REDIRECT_TO, env.GOOGLE_MATEAPP_ORIGIN);
     }
     if (url.pathname === '/google-logout/sigor') {
       if (request.method === 'OPTIONS') return preflightResponseWithOrigin(env.GOOGLE_SIGOR_ORIGIN);
-      return handleGoogleLogout(request, env.GOOGLE_SIGOR_ORIGIN, env.GOOGLE_SIGOR_ORIGIN);
+      return handleGoogleLogout(request, env.GOOGLE_SIGOR_REDIRECT_TO, env.GOOGLE_SIGOR_ORIGIN);
     }
 
     if (url.pathname === '/oauth2/verify/mateapp') {
