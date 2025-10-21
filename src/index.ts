@@ -1,14 +1,23 @@
-import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, preflightResponse, preflightResponseWithOrigin, syncNftOwnershipFromEvents } from "@gaiaprotocol/worker-common";
-import { createPublicClient, http } from "viem";
-import { kaia } from "viem/chains";
-import { ChatRoom } from "./do/chat-room";
-import { handleGetMainNftsWithInfo } from "./handlers/get-main-nfts-with-info";
-import { handleGetMyMainNft } from "./handlers/get-my-main-nft";
-import { handleGetProfile } from "./handlers/get-profile";
-import { handleGetProfiles } from "./handlers/get-profiles";
-import { handleNftOwnershipStats } from "./handlers/nft-ownership-stats";
-import { handleSetMainNft } from "./handlers/set-main-nft";
-import { handleSetProfile } from "./handlers/set-profile";
+import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, preflightResponse, preflightResponseWithOrigin, syncNftOwnershipFromEvents } from '@gaiaprotocol/worker-common';
+import { createPublicClient, http } from 'viem';
+import { kaia } from 'viem/chains';
+import { ChatRoom } from './do/chat-room';
+import { handleGetMainNftsWithInfo } from './handlers/get-main-nfts-with-info';
+import { handleGetMyMainNft } from './handlers/get-my-main-nft';
+import { handleGetProfile } from './handlers/get-profile';
+import { handleGetProfiles } from './handlers/get-profiles';
+import { handleNftOwnershipStats } from './handlers/nft-ownership-stats';
+import { oauth2Callback } from './handlers/oauth2/callback';
+import { oauth2LinkWallet } from './handlers/oauth2/link-wallet';
+import { loginWithIdToken as oauth2LoginWithIdToken } from './handlers/oauth2/login-with-idtoken';
+import { oauth2Logout } from './handlers/oauth2/logout';
+import { oauth2Me } from './handlers/oauth2/me';
+import { oauth2MeByToken } from './handlers/oauth2/me-by-token';
+import { oauth2Start } from './handlers/oauth2/start';
+import { oauth2UnlinkWalletBySession } from './handlers/oauth2/unlink-wallet-by-session';
+import { oauth2UnlinkWalletByToken } from './handlers/oauth2/unlink-wallet-by-token';
+import { handleSetMainNft } from './handlers/set-main-nft';
+import { handleSetProfile } from './handlers/set-profile';
 
 export { ChatRoom };
 
@@ -174,12 +183,38 @@ export default {
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
     if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
     if (url.pathname === '/nft-ownership-stats') return handleNftOwnershipStats(request, env);
-    if (url.pathname === '/profile') return handleGetProfile(request, env);
-    if (url.pathname === '/profile') return handleSetProfile(request, env);
+    if (url.pathname === '/profile' && request.method === 'GET') return handleGetProfile(request, env);
+    if (url.pathname === '/profile' && request.method === 'POST') return handleSetProfile(request, env);
     if (url.pathname === '/profiles') return handleGetProfiles(request, env);
     if (url.pathname === '/set-main-nft') return handleSetMainNft(request, env);
     if (url.pathname === '/get-my-main-nft') return handleGetMyMainNft(request, env);
     if (url.pathname === '/get-main-nfts-with-info') return handleGetMainNftsWithInfo(request, env);
+
+    // OAuth2
+    const oauth2Providers = {
+      google: {
+        client_id: env.GOOGLE_CLIENT_ID,
+        client_secret: env.GOOGLE_CLIENT_SECRET,
+        auth_url: 'https://accounts.google.com/o/oauth2/v2/auth',
+        token_url: 'https://oauth2.googleapis.com/token',
+        userinfo_url: 'https://openidconnect.googleapis.com/v1/userinfo',
+        scope: 'openid email profile',
+        oidc: {
+          issuer: 'https://accounts.google.com',
+          discovery: 'https://accounts.google.com/.well-known/openid-configuration',
+          require_email_verified: false,
+        }
+      },
+    }
+    if (url.pathname === '/oauth2/start/mateapp2google') return oauth2Start(request, env, 'google', oauth2Providers, env.OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI);
+    if (url.pathname === '/oauth2/callback/mateapp2google') return oauth2Callback(request, env, 'google', oauth2Providers, env.OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI, env.GOOGLE_MATEAPP_REDIRECT_TO);
+    if (url.pathname === '/oauth2/login-with-idtoken/google') return oauth2LoginWithIdToken(request, env, oauth2Providers, 'google')
+    if (url.pathname === '/oauth2/me') return oauth2Me(request, env, oauth2Providers)
+    if (url.pathname === '/oauth2/me-by-token/google') return oauth2MeByToken(request, env, 'google')
+    if (url.pathname === '/oauth2/logout') return oauth2Logout(request, env, oauth2Providers)
+    if (url.pathname === '/oauth2/link-wallet') return oauth2LinkWallet(request, env)
+    if (url.pathname === '/oauth2/unlink-wallet-by-token') return oauth2UnlinkWalletByToken(request, env)
+    if (url.pathname === '/oauth2/unlink-wallet-by-session') return oauth2UnlinkWalletBySession(request, env)
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
     if (chatMatch) {
