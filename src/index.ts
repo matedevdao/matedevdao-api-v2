@@ -18,6 +18,7 @@ import { oauth2UnlinkWalletBySession } from './handlers/oauth2/unlink-wallet-by-
 import { oauth2UnlinkWalletByToken } from './handlers/oauth2/unlink-wallet-by-token';
 import { handleSetMainNft } from './handlers/set-main-nft';
 import { handleSetProfile } from './handlers/set-profile';
+import { syncMarketplaceEvents } from './services/nft-marketplace-sync';
 
 export { ChatRoom };
 
@@ -35,6 +36,8 @@ const TOKEN_IDS_RANGES: { [address: string]: { start: number; end: number } } = 
 };
 
 const BLOCK_STEP = 2500;
+
+const NFT_MARKETPLACE_ADDRESS = '0x53F54285c4112232CC933bE787E3170fe2931218';
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
@@ -231,5 +234,6 @@ export default {
   },
   async scheduled(controller, env, ctx) {
     await syncNftOwnershipFromEvents(env, KAIA_CLIENT, TOKEN_IDS_RANGES, BLOCK_STEP);
+    await syncMarketplaceEvents(env, KAIA_CLIENT, NFT_MARKETPLACE_ADDRESS, BLOCK_STEP);
   },
 } satisfies ExportedHandler<Env>;
