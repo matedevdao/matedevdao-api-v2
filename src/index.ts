@@ -1,4 +1,4 @@
-import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, preflightResponse, preflightResponseWithOrigin, syncNftOwnershipFromEvents } from '@gaiaprotocol/worker-common';
+import { handleGoogleLogin, handleGoogleLogout, handleGoogleMe, handleGoogleMeByWallet, handleLinkGoogleWeb3Wallet, handleLogin, handleNonce, handleOAuth2Callback, handleOAuth2Verify, handleUnlinkGoogleWeb3WalletBySession, handleUnlinkGoogleWeb3WalletByToken, handleUploadImage, handleValidateToken, jsonWithCors, preflightResponse, preflightResponseWithOrigin, syncNftOwnershipFromEvents } from '@gaiaprotocol/worker-common';
 import { createPublicClient, http } from 'viem';
 import { kaia } from 'viem/chains';
 import { ChatRoom } from './do/chat-room';
@@ -228,6 +228,26 @@ export default {
 
       // DO에 요청 위임
       return obj.fetch(request);
+    }
+
+    if (url.pathname === '/sync-nft-ownership-from-events') {
+      try {
+        await syncNftOwnershipFromEvents(env, KAIA_CLIENT, TOKEN_IDS_RANGES, BLOCK_STEP);
+      } catch (e: any) {
+        console.error(e);
+        return jsonWithCors({ error: e.message }, 500);
+      }
+      return jsonWithCors({ message: 'OK' });
+    }
+
+    if (url.pathname === '/sync-marketplace-events') {
+      try {
+        await syncMarketplaceEvents(env, KAIA_CLIENT, NFT_MARKETPLACE_ADDRESS, BLOCK_STEP);
+      } catch (e: any) {
+        console.error(e);
+        return jsonWithCors({ error: e.message }, 500);
+      }
+      return jsonWithCors({ message: 'OK' });
     }
 
     return new Response('Not Found', { status: 404 });
