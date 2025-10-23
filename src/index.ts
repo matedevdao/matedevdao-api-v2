@@ -252,8 +252,22 @@ export default {
 
     return new Response('Not Found', { status: 404 });
   },
-  async scheduled(controller, env, ctx) {
-    await syncNftOwnershipFromEvents(env, KAIA_CLIENT, TOKEN_IDS_RANGES, BLOCK_STEP);
-    await syncMarketplaceEvents(env, KAIA_CLIENT, NFT_MARKETPLACE_ADDRESS, BLOCK_STEP);
+  async scheduled(event, env, ctx) {
+    const cron = event.cron; // "*/2 * * * *" 또는 "1-59/2 * * * *"
+
+    try {
+      if (cron === "*/2 * * * *") {
+        // 소유권 이벤트만
+        await syncNftOwnershipFromEvents(env, KAIA_CLIENT, TOKEN_IDS_RANGES, BLOCK_STEP);
+        return;
+      }
+      if (cron === "1-59/2 * * * *") {
+        // 마켓플레이스 이벤트만
+        await syncMarketplaceEvents(env, KAIA_CLIENT, NFT_MARKETPLACE_ADDRESS, BLOCK_STEP);
+        return;
+      }
+    } catch (e) {
+      console.error("[cron error]", cron, e);
+    }
   },
 } satisfies ExportedHandler<Env>;
