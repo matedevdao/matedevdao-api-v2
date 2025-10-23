@@ -2,7 +2,6 @@ import { handleLogin, handleNonce, handleUploadImage, handleValidateToken, jsonW
 import { createPublicClient, http } from 'viem';
 import { kaia } from 'viem/chains';
 import { ChatRoom } from './do/chat-room';
-import { handleGetActiveListings } from './handlers/get-active-listings';
 import { handleGetMainNftsWithInfo } from './handlers/get-main-nfts-with-info';
 import { handleGetMyMainNft } from './handlers/get-my-main-nft';
 import { handleGetProfile } from './handlers/get-profile';
@@ -111,7 +110,6 @@ export default {
     if (url.pathname === '/set-main-nft') return handleSetMainNft(request, env);
     if (url.pathname === '/get-my-main-nft') return handleGetMyMainNft(request, env);
     if (url.pathname === '/get-main-nfts-with-info') return handleGetMainNftsWithInfo(request, env);
-    if (url.pathname === '/get-active-listings') return handleGetActiveListings(request, env);
 
     // OAuth2
     const oauth2Providers = {
