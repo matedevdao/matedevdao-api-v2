@@ -2,7 +2,7 @@ import { jsonWithCors } from '@gaiaprotocol/worker-common';
 import { z } from 'zod';
 
 const getMainNftsSchema = z.object({
-  collection: z.string().regex(/^0x[a-fA-F0-9]{40}$/, 'Invalid Ethereum address'),
+  room: z.string().trim().min(1, 'room is required'),
   addresses: z.array(z.string().regex(/^0x[a-fA-F0-9]{40}$/)).nonempty(),
 });
 
@@ -14,26 +14,30 @@ export async function handleGetMainNfts(request: Request, env: Env): Promise<Res
 
     const body = await request.json();
     const parsed = getMainNftsSchema.safeParse(body);
-    if (!parsed.success) return jsonWithCors({ error: parsed.error.message }, 400);
+    if (!parsed.success) {
+      return jsonWithCors({ error: parsed.error.message }, 400);
+    }
 
-    const { collection, addresses } = parsed.data;
+    const { room, addresses } = parsed.data;
 
     const placeholders = addresses.map(() => '?').join(', ');
     const stmt = `
       SELECT user_address, contract_addr, token_id, selected_at
       FROM main_nft_per_room
-      WHERE collection = ? AND user_address IN (${placeholders})
+      WHERE room = ? AND user_address IN (${placeholders})
     `;
 
-    const { results } = await env.DB.prepare(stmt).bind(collection, ...addresses).all<{
-      user_address: string;
-      contract_addr: string;
-      token_id: string;
-      selected_at: number;
-    }>();
+    const { results } = await env.DB.prepare(stmt)
+      .bind(room, ...addresses)
+      .all<{
+        user_address: string;
+        contract_addr: string;
+        token_id: string;
+        selected_at: number;
+      }>();
 
     const items = (results ?? []).map(r => ({
-      collection,
+      room,
       user_address: r.user_address,
       contract_addr: r.contract_addr,
       token_id: r.token_id,

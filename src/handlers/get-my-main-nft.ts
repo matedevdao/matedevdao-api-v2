@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { jsonWithCors, verifyToken } from '@gaiaprotocol/worker-common';
 
 const getMyMainNftSchema = z.object({
-  collection: z.string(),
+  room: z.string().trim().min(1),
 });
 
 export async function handleGetMyMainNft(request: Request, env: Env): Promise<Response> {
@@ -20,21 +20,23 @@ export async function handleGetMyMainNft(request: Request, env: Env): Promise<Re
     const parsed = getMyMainNftSchema.safeParse(body);
     if (!parsed.success) return jsonWithCors({ error: parsed.error.message }, 400);
 
-    const { collection } = parsed.data;
+    const { room } = parsed.data;
 
     const { results } = await env.DB.prepare(`
       SELECT contract_addr, token_id, selected_at
       FROM main_nft_per_room
-      WHERE collection = ? AND user_address = ?
+      WHERE room = ? AND user_address = ?
       LIMIT 1
-    `).bind(collection, userAddress).all<{ contract_addr: string; token_id: string; selected_at: number }>();
+    `)
+      .bind(room, userAddress)
+      .all<{ contract_addr: string; token_id: string; selected_at: number }>();
 
     const row = results?.[0];
 
     return jsonWithCors(
       row
-        ? { collection, user_address: userAddress, ...row }
-        : { collection, user_address: userAddress, contract_addr: undefined, token_id: undefined, selected_at: undefined },
+        ? { room, user_address: userAddress, ...row }
+        : { room, user_address: userAddress, contract_addr: undefined, token_id: undefined, selected_at: undefined },
       200
     );
   } catch (err) {
