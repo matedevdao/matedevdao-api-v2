@@ -17,6 +17,17 @@ const schema = z.object({
   addresses: z.array(z.string().regex(/^0x[a-fA-F0-9]{40}$/)).nonempty(),
 });
 
+const ADDR_TO_COLLECTION: Record<string, string> = {
+  "0xE47E90C58F8336A2f24Bcd9bCB530e2e02E1E8ae": "dogesoundclub-mates",
+  "0x2B303fd0082E4B51e5A6C602F45545204bbbB4DC": "dogesoundclub-e-mates",
+  "0xDeDd727ab86bce5D416F9163B2448860BbDE86d4": "dogesoundclub-biased-mates",
+  "0x81b5C41Bac33ea696D9684D9aFdB6cd9f6Ee5CFF": "kingcrowndao-pixel-kongz",
+  "0xF967431fb8F5B4767567854dE5448D2EdC21a482": "kingcrowndao-kongz",
+  "0x7340a44AbD05280591377345d21792Cdc916A388": "sigor-sparrows",
+  "0x455Ee7dD1fc5722A7882aD6B7B8c075655B8005B": "sigor-housedeeds",
+  "0x595b299Db9d83279d20aC37A85D36489987d7660": "babyping",
+};
+
 export async function handleGetMainNftsWithInfo(request: Request, env: Env): Promise<Response> {
   try {
     if (request.method !== 'POST') return jsonWithCors({ error: 'Method Not Allowed' }, 405);
@@ -51,9 +62,9 @@ export async function handleGetMainNftsWithInfo(request: Request, env: Env): Pro
     const rows = results ?? [];
     if (rows.length === 0) return jsonWithCors([], 200);
 
-    // NFT 메타데이터 조회 키 구성 (`room:token_id`)
+    // NFT 메타데이터 조회 키 구성 (`collection:token_id`)
     const tokenIds = Array.from(
-      new Set(rows.map(r => `${r.room}:${r.token_id}`))
+      new Set(rows.map(r => `${ADDR_TO_COLLECTION[r.contract_addr]}:${r.token_id}`))
     );
 
     let byKey: Record<string, NftItem> = {};
@@ -64,7 +75,7 @@ export async function handleGetMainNftsWithInfo(request: Request, env: Env): Pro
     const items = rows.map(r => {
       const tidNum = Number(r.token_id);
       const keyCandidates = [
-        `${r.room}:${tidNum}`,
+        `${ADDR_TO_COLLECTION[r.contract_addr]}:${tidNum}`,
         `${r.contract_addr}:${tidNum}`,
         String(tidNum),
       ];
