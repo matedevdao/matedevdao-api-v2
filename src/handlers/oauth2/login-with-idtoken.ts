@@ -1,5 +1,5 @@
 import { jsonWithCors } from '@gaiaprotocol/worker-common';
-import type { OAuth2ProviderConfig, ProviderRegistry } from './provider';
+import { OAuth2ProviderConfig, ProviderRegistry } from 'cf-oauth';
 
 type IDTokenPayload = {
   iss: string;
@@ -158,7 +158,7 @@ function assertClaims(payload: IDTokenPayload, cfg: OAuth2ProviderConfig, nonce?
   }
 }
 
-export async function loginWithIdToken(
+export async function oauth2LoginWithIdToken(
   request: Request,
   env: Env,
   providers: ProviderRegistry,

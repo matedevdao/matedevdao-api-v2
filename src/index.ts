@@ -1,4 +1,5 @@
 import { handleLogin, handleNonce, handleUploadImage, handleValidateToken, jsonWithCors, preflightResponse, syncNftOwnershipFromEvents } from '@gaiaprotocol/worker-common';
+import { oauth2Callback, oauth2Logout, oauth2Start } from 'cf-oauth';
 import { createPublicClient, http } from 'viem';
 import { kaia } from 'viem/chains';
 import { ChatRoom } from './do/chat-room';
@@ -7,13 +8,10 @@ import { handleGetMyMainNft } from './handlers/get-my-main-nft';
 import { handleGetProfile } from './handlers/get-profile';
 import { handleGetProfiles } from './handlers/get-profiles';
 import { handleNftOwnershipStats } from './handlers/nft-ownership-stats';
-import { oauth2Callback } from './handlers/oauth2/callback';
 import { oauth2LinkWallet } from './handlers/oauth2/link-wallet';
-import { loginWithIdToken as oauth2LoginWithIdToken } from './handlers/oauth2/login-with-idtoken';
-import { oauth2Logout } from './handlers/oauth2/logout';
+import { oauth2LoginWithIdToken } from './handlers/oauth2/login-with-idtoken';
 import { oauth2Me } from './handlers/oauth2/me';
 import { oauth2MeByToken } from './handlers/oauth2/me-by-token';
-import { oauth2Start } from './handlers/oauth2/start';
 import { oauth2UnlinkWalletBySession } from './handlers/oauth2/unlink-wallet-by-session';
 import { oauth2UnlinkWalletByToken } from './handlers/oauth2/unlink-wallet-by-token';
 import { handleSetMainNft } from './handlers/set-main-nft';
@@ -127,6 +125,7 @@ export default {
         }
       },
     }
+
     if (url.pathname === '/oauth2/start/mateapp2google') return oauth2Start(request, env, 'google', oauth2Providers, env.OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI);
     if (url.pathname === '/oauth2/callback/mateapp2google') return oauth2Callback(request, env, 'google', oauth2Providers, env.OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI, env.GOOGLE_MATEAPP_REDIRECT_TO);
     if (url.pathname === '/oauth2/login-with-idtoken/google') return oauth2LoginWithIdToken(request, env, oauth2Providers, 'google')

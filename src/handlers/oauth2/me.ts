@@ -1,7 +1,5 @@
 import { jsonWithCors } from '@gaiaprotocol/worker-common';
-import { OAuth2ProviderConfig } from './provider';
-
-export type ProviderRegistry = Record<string, OAuth2ProviderConfig>;
+import { ProviderRegistry } from 'cf-oauth';
 
 type SessionRecord = {
   provider: string;
