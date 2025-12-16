@@ -3,6 +3,9 @@
 	"name": "api-v2",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-07-15",
+	"placement": {
+		"mode": "smart"
+	},
 	"observability": {
 		"enabled": true
 	},
