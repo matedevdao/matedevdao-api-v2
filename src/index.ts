@@ -98,7 +98,7 @@ export default {
     // Other APIs
     if (request.method === 'OPTIONS') return preflightResponse();
     if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
-    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env);
+    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env, env.MATEAPP_DOMAIN, env.MATEAPP_URI);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
     if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
     if (url.pathname === '/nft-ownership-stats') return handleNftOwnershipStats(request, env);
@@ -166,6 +166,15 @@ export default {
       }
       return jsonWithCors({ message: 'OK' });
     }
+
+    if (url.pathname === '/login/sigor' && request.method === 'POST')
+      return handleLogin(
+        request,
+        1,
+        env,
+        env.SIGOR_DOMAIN,
+        env.SIGOR_URI,
+      );
 
     return new Response('Not Found', { status: 404 });
   },

@@ -69,13 +69,18 @@
 		"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요.",
 		"GOOGLE_CLIENT_ID": "996341622273-ph42ssb0778khivgjpuj7sbmg6hjrk2o.apps.googleusercontent.com",
 		"GOOGLE_MATEAPP_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/mateapp",
-		"GOOGLE_SIGOR_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/sigor",
 		"SESSION_TTL_DAYS": "7",
 		"GOOGLE_MATEAPP_ORIGIN": "https://matedevdao.github.io",
-		"GOOGLE_SIGOR_ORIGIN": "https://sigor.com",
 		"GOOGLE_MATEAPP_REDIRECT_TO": "https://matedevdao.github.io/mate-app",
-		"GOOGLE_SIGOR_REDIRECT_TO": "https://sigor.com",
 		"OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/mateapp2google",
+		// Mate App
+		"MATEAPP_GOOGLE_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/mateapp/google",
+		"MATEAPP_DOMAIN": "matedevdao.github.io",
+		"MATEAPP_URI": "https://matedevdao.github.io/mate-app",
+		// 시고르
+		"SIGOR_GOOGLE_REDIRECT_URI": "https://api-v2.matedevdao.workers.dev/oauth2/callback/sigor/google",
+		"SIGOR_DOMAIN": "sigor.com",
+		"SIGOR_URI": "https://sigor.com",
 	},
 	"migrations": [
 		{
