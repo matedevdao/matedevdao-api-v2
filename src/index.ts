@@ -98,7 +98,7 @@ export default {
     // Other APIs
     if (request.method === 'OPTIONS') return preflightResponse();
     if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
-    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env, env.MATEAPP_DOMAIN, env.MATEAPP_URI);
+    if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env, env.MATEAPP_DOMAIN, env.MATEAPP_URI, env.MATEAPP_MESSAGE_FOR_WALLET_LOGIN);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);
     if (url.pathname === '/upload-image' && request.method === 'POST') return handleUploadImage(request, env);
     if (url.pathname === '/nft-ownership-stats') return handleNftOwnershipStats(request, env);
@@ -174,6 +174,7 @@ export default {
         env,
         env.SIGOR_DOMAIN,
         env.SIGOR_URI,
+        env.SIGOR_MESSAGE_FOR_WALLET_LOGIN
       );
 
     return new Response('Not Found', { status: 404 });

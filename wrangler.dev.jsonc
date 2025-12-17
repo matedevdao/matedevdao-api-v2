@@ -60,7 +60,6 @@
 	"vars": {
 		"ALLOWED_DOMAIN": "localhost:8080",
 		"ALLOWED_URI": "http://localhost:8080",
-		"MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요.",
 		"GOOGLE_CLIENT_ID": "996341622273-ph42ssb0778khivgjpuj7sbmg6hjrk2o.apps.googleusercontent.com",
 		"GOOGLE_MATEAPP_REDIRECT_URI": "http://localhost:8081/oauth2/callback/mateapp",
 		"SESSION_TTL_DAYS": "7",
@@ -71,10 +70,12 @@
 		"MATEAPP_GOOGLE_REDIRECT_URI": "http://localhost:8080/oauth2/callback/mateapp/google",
 		"MATEAPP_DOMAIN": "localhost:8080",
 		"MATEAPP_URI": "http://localhost:8080",
+		"MATEAPP_MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요.",
 		// 시고르
 		"SIGOR_GOOGLE_REDIRECT_URI": "http://localhost:8080/oauth2/callback/sigor/google",
 		"SIGOR_DOMAIN": "localhost:8080",
 		"SIGOR_URI": "http://localhost:8080",
+		"SIGOR_MESSAGE_FOR_WALLET_LOGIN": "시고르에 로그인하려면 이 메시지에 서명해 주세요.",
 	},
 	"migrations": [
 		{

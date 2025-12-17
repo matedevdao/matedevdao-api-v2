@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.10.15",
 		"@gaiaprotocol/chat-worker": "^0.0.4",
-		"@gaiaprotocol/worker-common": "^0.1.21",
+		"@gaiaprotocol/worker-common": "^0.1.22",
 		"@tsndr/cloudflare-worker-jwt": "^3.2.1",
 		"cf-oauth": "^0.0.12",
 		"fcm-cloudflare-workers": "^2.0.1",
