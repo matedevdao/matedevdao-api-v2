@@ -128,13 +128,6 @@ export default {
 
     if (url.pathname === '/oauth2/start/mateapp2google') return oauth2Start(request, env, 'google', oauth2Providers, env.OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI);
     if (url.pathname === '/oauth2/callback/mateapp2google') return oauth2Callback(request, env, 'google', oauth2Providers, env.OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI, env.GOOGLE_MATEAPP_REDIRECT_TO);
-    if (url.pathname === '/oauth2/login-with-idtoken/google') return oauth2LoginWithIdToken(request, env, oauth2Providers, 'google')
-    if (url.pathname === '/oauth2/me') return oauth2Me(request, env, oauth2Providers)
-    if (url.pathname === '/oauth2/me-by-token/google') return oauth2MeByToken(request, env, 'google')
-    if (url.pathname === '/oauth2/logout') return oauth2Logout(request, env, oauth2Providers)
-    if (url.pathname === '/oauth2/link-wallet') return oauth2LinkWallet(request, env)
-    if (url.pathname === '/oauth2/unlink-wallet-by-token') return oauth2UnlinkWalletByToken(request, env)
-    if (url.pathname === '/oauth2/unlink-wallet-by-session') return oauth2UnlinkWalletBySession(request, env)
 
     const chatMatch = url.pathname.match(/^\/chat\/([^/]+)\/(stream|send)$/);
     if (chatMatch) {
@@ -176,6 +169,34 @@ export default {
         env.SIGOR_URI,
         env.SIGOR_MESSAGE_FOR_WALLET_LOGIN
       );
+
+
+    if (url.pathname === '/oauth2/start/sigor/google')
+      return oauth2Start(
+        request,
+        env,
+        'google',
+        oauth2Providers,
+        env.SIGOR_GOOGLE_REDIRECT_URI,
+      );
+
+    if (url.pathname === '/oauth2/callback/sigor/google')
+      return oauth2Callback(
+        request,
+        env,
+        'google',
+        oauth2Providers,
+        env.SIGOR_GOOGLE_REDIRECT_URI,
+        env.SIGOR_URI,
+      );
+
+    if (url.pathname === '/oauth2/login-with-idtoken/google') return oauth2LoginWithIdToken(request, env, oauth2Providers, 'google');
+    if (url.pathname === '/oauth2/me-by-token/google') return oauth2MeByToken(request, env, 'google');
+    if (url.pathname === '/oauth2/me') return oauth2Me(request, env, oauth2Providers);
+    if (url.pathname === '/oauth2/logout') return oauth2Logout(request, env, oauth2Providers);
+    if (url.pathname === '/oauth2/link-wallet') return oauth2LinkWallet(request, env);
+    if (url.pathname === '/oauth2/unlink-wallet-by-token') return oauth2UnlinkWalletByToken(request, env);
+    if (url.pathname === '/oauth2/unlink-wallet-by-session') return oauth2UnlinkWalletBySession(request, env);
 
     return new Response('Not Found', { status: 404 });
   },

@@ -67,12 +67,12 @@
 		"GOOGLE_MATEAPP_REDIRECT_TO": "http://localhost:8080",
 		"OAUTH2_MATEAPP2GOOGLE_REDIRECT_URI": "http://localhost:8081/oauth2/callback/mateapp2google",
 		// Mate App
-		"MATEAPP_GOOGLE_REDIRECT_URI": "http://localhost:8080/oauth2/callback/mateapp/google",
+		"MATEAPP_GOOGLE_REDIRECT_URI": "http://localhost:8081/oauth2/callback/mateapp/google",
 		"MATEAPP_DOMAIN": "localhost:8080",
 		"MATEAPP_URI": "http://localhost:8080",
 		"MATEAPP_MESSAGE_FOR_WALLET_LOGIN": "Mate에 로그인하려면 이 메시지에 서명해 주세요.",
 		// 시고르
-		"SIGOR_GOOGLE_REDIRECT_URI": "http://localhost:8080/oauth2/callback/sigor/google",
+		"SIGOR_GOOGLE_REDIRECT_URI": "http://localhost:8081/oauth2/callback/sigor/google",
 		"SIGOR_DOMAIN": "localhost:8080",
 		"SIGOR_URI": "http://localhost:8080",
 		"SIGOR_MESSAGE_FOR_WALLET_LOGIN": "시고르에 로그인하려면 이 메시지에 서명해 주세요.",
