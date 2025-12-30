@@ -4,7 +4,7 @@ import { z } from "zod";
 const createAnnouncementSchema = z.object({
   title: z.string().min(1).max(100),
   content: z.string().min(1).max(1000),
-  link_url: z.string().url().optional(),
+  link_url: z.string().url().nullish(),
   priority: z.number().int().min(0).max(100).optional().default(0),
 });
 
