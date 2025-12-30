@@ -3,6 +3,12 @@ import { oauth2Callback, oauth2Logout, oauth2Start } from 'cf-oauth';
 import { createPublicClient, http } from 'viem';
 import { kaia } from 'viem/chains';
 import { ChatRoom } from './do/chat-room';
+import { handleAdminLogin } from './handlers/admin/login';
+import { handleGetAllAnnouncements } from './handlers/admin/get-all-announcements';
+import { handleGetAnnouncements } from './handlers/announcements/get-announcements';
+import { handleCreateAnnouncement } from './handlers/announcements/create-announcement';
+import { handleUpdateAnnouncement } from './handlers/announcements/update-announcement';
+import { handleDeleteAnnouncement } from './handlers/announcements/delete-announcement';
 import { handleGetMainNftsWithInfo } from './handlers/get-main-nfts-with-info';
 import { handleGetMyMainNft } from './handlers/get-my-main-nft';
 import { handleGetProfile } from './handlers/get-profile';
@@ -14,6 +20,8 @@ import { oauth2Me } from './handlers/oauth2/me';
 import { oauth2MeByToken } from './handlers/oauth2/me-by-token';
 import { oauth2UnlinkWalletBySession } from './handlers/oauth2/unlink-wallet-by-session';
 import { oauth2UnlinkWalletByToken } from './handlers/oauth2/unlink-wallet-by-token';
+import { handleRegisterPushToken } from './handlers/push-tokens/register-push-token';
+import { handleUnregisterPushToken } from './handlers/push-tokens/unregister-push-token';
 import { handleSetMainNft } from './handlers/set-main-nft';
 import { handleSetProfile } from './handlers/set-profile';
 import { syncMarketplaceEvents } from './services/nft-marketplace-sync';
@@ -108,6 +116,24 @@ export default {
     if (url.pathname === '/set-main-nft') return handleSetMainNft(request, env);
     if (url.pathname === '/get-my-main-nft') return handleGetMyMainNft(request, env);
     if (url.pathname === '/get-main-nfts-with-info') return handleGetMainNftsWithInfo(request, env);
+
+    // Admin routes
+    if (url.pathname === '/admin/login' && request.method === 'POST') return handleAdminLogin(request, env);
+    if (url.pathname === '/admin/announcements' && request.method === 'GET') return handleGetAllAnnouncements(request, env);
+
+    // Announcements
+    if (url.pathname === '/announcements' && request.method === 'GET') return handleGetAnnouncements(request, env);
+    if (url.pathname === '/announcements' && request.method === 'POST') return handleCreateAnnouncement(request, env);
+    const announcementMatch = url.pathname.match(/^\/announcements\/(\d+)$/);
+    if (announcementMatch) {
+      const id = announcementMatch[1];
+      if (request.method === 'PUT') return handleUpdateAnnouncement(request, env, id);
+      if (request.method === 'DELETE') return handleDeleteAnnouncement(request, env, id);
+    }
+
+    // Push Tokens
+    if (url.pathname === '/push-tokens' && request.method === 'POST') return handleRegisterPushToken(request, env);
+    if (url.pathname === '/push-tokens' && request.method === 'DELETE') return handleUnregisterPushToken(request, env);
 
     // OAuth2
     const oauth2Providers = {

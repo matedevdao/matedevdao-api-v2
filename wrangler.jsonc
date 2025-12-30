@@ -82,6 +82,11 @@
 		"SIGOR_DOMAIN": "sigor.com",
 		"SIGOR_URI": "https://sigor.com",
 		"SIGOR_MESSAGE_FOR_WALLET_LOGIN": "시고르에 로그인하려면 이 메시지에 서명해 주세요.",
+		// Admin addresses for announcements (comma-separated)
+		"ADMIN_ADDRESSES": "",
+		// Admin login credentials
+		"ADMIN_USERNAME": "admin"
+		// ADMIN_PASSWORD는 .dev.vars 또는 Cloudflare Secrets에 설정
 	},
 	"migrations": [
 		{

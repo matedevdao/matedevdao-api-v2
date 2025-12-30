@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mate Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Login Section -->
+    <div id="login-section" class="section">
+      <div class="login-container">
+        <h1>Mate Admin</h1>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">아이디</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">로그인</button>
+          <p id="login-error" class="error"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard-section" class="section hidden">
+      <header>
+        <h1>공지사항 관리</h1>
+        <button id="logout-btn" class="btn btn-secondary">로그아웃</button>
+      </header>
+
+      <main>
+        <!-- Create/Edit Form -->
+        <div class="card">
+          <h2 id="form-title">새 공지사항 작성</h2>
+          <form id="announcement-form">
+            <input type="hidden" id="edit-id">
+            <div class="form-group">
+              <label for="title">제목</label>
+              <input type="text" id="title" name="title" required maxlength="100">
+            </div>
+            <div class="form-group">
+              <label for="content">내용</label>
+              <textarea id="content" name="content" required maxlength="1000" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="link_url">링크 URL (선택)</label>
+              <input type="url" id="link_url" name="link_url" placeholder="https://...">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="priority">우선순위 (0-100)</label>
+                <input type="number" id="priority" name="priority" min="0" max="100" value="0">
+              </div>
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" id="is_active" name="is_active" checked>
+                  활성화
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">저장</button>
+              <button type="button" id="cancel-btn" class="btn btn-secondary hidden">취소</button>
+            </div>
+            <p id="form-error" class="error"></p>
+          </form>
+        </div>
+
+        <!-- Announcements List -->
+        <div class="card">
+          <h2>공지사항 목록</h2>
+          <div id="loading" class="loading">로딩 중...</div>
+          <table id="announcements-table" class="hidden">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>제목</th>
+                <th>상태</th>
+                <th>우선순위</th>
+                <th>생성일</th>
+                <th>작업</th>
+              </tr>
+            </thead>
+            <tbody id="announcements-tbody">
+            </tbody>
+          </table>
+          <p id="no-announcements" class="hidden">공지사항이 없습니다.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
