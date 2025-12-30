@@ -103,8 +103,18 @@ export default {
 
     const url = new URL(request.url);
 
-    // Other APIs
-    if (request.method === 'OPTIONS') return preflightResponse();
+    // Other APIs - CORS preflight with DELETE support
+    if (request.method === 'OPTIONS') {
+      return new Response(null, {
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+          'Access-Control-Max-Age': '86400',
+        },
+      });
+    }
     if (url.pathname === '/nonce' && request.method === 'POST') return handleNonce(request, env);
     if (url.pathname === '/login' && request.method === 'POST') return handleLogin(request, 8217, env, env.MATEAPP_DOMAIN, env.MATEAPP_URI, env.MATEAPP_MESSAGE_FOR_WALLET_LOGIN);
     if (url.pathname === '/validate-token' && request.method === 'GET') return handleValidateToken(request, env);

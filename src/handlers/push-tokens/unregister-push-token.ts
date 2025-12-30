@@ -1,5 +1,6 @@
 import { jsonWithCors, verifyToken } from "@gaiaprotocol/worker-common";
 import { z } from "zod";
+import { FcmService, FCM_TOPIC_NOTICES } from "../../services/fcm";
 
 const unregisterPushTokenSchema = z.object({
   fcm_token: z.string().min(1),
@@ -28,6 +29,14 @@ export async function handleUnregisterPushToken(
     }
 
     const { fcm_token } = parseResult.data;
+
+    // 토픽 구독 해제
+    try {
+      const fcm = new FcmService(env);
+      await fcm.unsubscribeFromTopic(fcm_token, FCM_TOPIC_NOTICES);
+    } catch (err) {
+      console.error('[PushToken] Topic unsubscribe failed:', err);
+    }
 
     // Only delete if the token belongs to this user
     await env.DB.prepare(`

@@ -1,5 +1,6 @@
 import { jsonWithCors, verifyToken } from "@gaiaprotocol/worker-common";
 import { z } from "zod";
+import { FcmService, FCM_TOPIC_NOTICES } from "../../services/fcm";
 
 const registerPushTokenSchema = z.object({
   fcm_token: z.string().min(1),
@@ -40,7 +41,16 @@ export async function handleRegisterPushToken(
         updated_at = CAST(strftime('%s','now') AS INTEGER)
     `).bind(userAddress, fcm_token, device_info ?? null).run();
 
-    return jsonWithCors({ success: true });
+    // 공지사항 토픽 구독
+    let subscribed = false;
+    try {
+      const fcm = new FcmService(env);
+      subscribed = await fcm.subscribeToTopic(fcm_token, FCM_TOPIC_NOTICES);
+    } catch (err) {
+      console.error('[PushToken] Topic subscribe failed:', err);
+    }
+
+    return jsonWithCors({ success: true, subscribed });
   } catch (err) {
     console.error(err);
     return jsonWithCors(

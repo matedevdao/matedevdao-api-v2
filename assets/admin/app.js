@@ -150,12 +150,16 @@ async function handleSubmitAnnouncement(e) {
   const link_url = document.getElementById('link_url').value || null;
   const priority = parseInt(document.getElementById('priority').value) || 0;
   const is_active = document.getElementById('is_active').checked;
+  const send_push = document.getElementById('send_push').checked;
 
   const body = { title, content, link_url, priority };
 
   // Include is_active only for updates
   if (editingId) {
     body.is_active = is_active;
+  } else {
+    // Include send_push only for new announcements
+    body.send_push = send_push;
   }
 
   try {
@@ -178,6 +182,12 @@ async function handleSubmitAnnouncement(e) {
 
     if (!response.ok) {
       throw new Error(data.error || '저장 실패');
+    }
+
+    // 푸시 발송 결과 표시
+    if (data.push) {
+      const { sent, failed } = data.push;
+      alert(`공지사항이 저장되었습니다.\n푸시 알림: ${sent}명 발송 성공, ${failed}명 실패`);
     }
 
     resetForm();
@@ -210,6 +220,8 @@ async function editAnnouncement(id) {
     document.getElementById('priority').value = announcement.priority;
     document.getElementById('is_active').checked = announcement.is_active;
     cancelBtn.classList.remove('hidden');
+    // 수정 시 푸시 발송 옵션 숨김
+    document.getElementById('send-push-group').style.display = 'none';
 
     // Scroll to form
     document.querySelector('.card').scrollIntoView({ behavior: 'smooth' });
@@ -247,6 +259,8 @@ function resetForm() {
   announcementForm.reset();
   document.getElementById('edit-id').value = '';
   document.getElementById('is_active').checked = true;
+  document.getElementById('send_push').checked = true;
+  document.getElementById('send-push-group').style.display = '';
   cancelBtn.classList.add('hidden');
   formError.textContent = '';
 }
