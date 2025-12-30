@@ -186,8 +186,7 @@ async function handleSubmitAnnouncement(e) {
 
     // 푸시 발송 결과 표시
     if (data.push) {
-      const { sent, failed } = data.push;
-      alert(`공지사항이 저장되었습니다.\n푸시 알림: ${sent}명 발송 성공, ${failed}명 실패`);
+      alert('공지사항이 저장되었습니다.');
     }
 
     resetForm();
